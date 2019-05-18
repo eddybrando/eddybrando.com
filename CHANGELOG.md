@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/gatsbyjs/gatsby-starter-default/compare/v0.2.0...v0.3.0) (2019-05-18)
+
+
+### Features
+
+* **header:** add base style ([a881727](https://github.com/gatsbyjs/gatsby-starter-default/commit/a881727))
+* **header:** define background color ([6d769ee](https://github.com/gatsbyjs/gatsby-starter-default/commit/6d769ee))
+* **header:** remove unnecessary content ([1fc05eb](https://github.com/gatsbyjs/gatsby-starter-default/commit/1fc05eb))
+* **header:** style font ([3a4227c](https://github.com/gatsbyjs/gatsby-starter-default/commit/3a4227c))
+
+
+
 ## 0.2.0 (2019-05-18)
 
 
