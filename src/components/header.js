@@ -1,8 +1,10 @@
 import React from "react"
 
 const Header = () => (
-  <header class="header">
-    <h1 class="headline">Hi, I'm Eddybrando.</h1>
+  <header className="header">
+    <h1 className="headline">
+      Hi, I'm <span className="highlight">Eddybrando</span>.
+    </h1>
   </header>
 )
 
