@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.4.0](https://github.com/gatsbyjs/gatsby-starter-default/compare/v0.3.0...v0.4.0) (2019-05-18)
+
+
+### Features
+
+* **home:** add main text ([ebaad31](https://github.com/gatsbyjs/gatsby-starter-default/commit/ebaad31))
+* **home:** display profile picture ([8178149](https://github.com/gatsbyjs/gatsby-starter-default/commit/8178149))
+* **home:** remove unused link ([4672437](https://github.com/gatsbyjs/gatsby-starter-default/commit/4672437))
+* **home:** style profile picture ([8896a0f](https://github.com/gatsbyjs/gatsby-starter-default/commit/8896a0f))
+
+
+
 ## [0.3.0](https://github.com/gatsbyjs/gatsby-starter-default/compare/v0.2.0...v0.3.0) (2019-05-18)
 
 
