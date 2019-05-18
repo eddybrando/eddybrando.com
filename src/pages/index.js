@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, Link, StaticQuery } from "gatsby"
+import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
@@ -29,7 +29,6 @@ const IndexPage = () => (
           I’m a Peruvian developer, designer and entrepreneur specialised in web
           technologies.
         </p>
-        <Link to="/page-2/">Go to page 2</Link>
       </Layout>
     )}
   />
