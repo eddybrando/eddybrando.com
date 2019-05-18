@@ -11,8 +11,8 @@ const IndexPage = () => (
       query {
         image: file(relativePath: { eq: "eddybrando.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 200) {
-              ...GatsbyImageSharpFluid
+            fixed(width: 100, height: 100) {
+              ...GatsbyImageSharpFixed
             }
           }
         }
@@ -21,7 +21,10 @@ const IndexPage = () => (
     render={data => (
       <Layout>
         <SEO title="Home" />
-        <Img fluid={data.image.childImageSharp.fluid} />
+        <Img
+          className="profile-picture"
+          fixed={data.image.childImageSharp.fixed}
+        />
         <p>
           I’m a Peruvian developer, designer and entrepreneur specialised in web
           technologies.
