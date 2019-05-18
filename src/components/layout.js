@@ -6,7 +6,7 @@ import "./layout.css"
 
 const Layout = ({ children }) => (
   <>
-    <Header siteTitle="asd" />
+    <Header />
     <div
       style={{
         margin: `0 auto`,
