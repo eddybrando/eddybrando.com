@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://github.com/gatsbyjs/gatsby-starter-default/compare/v0.4.0...v1.0.0) (2019-05-20)
+
+
+### Features
+
+* add custom favicon ([6c92742](https://github.com/gatsbyjs/gatsby-starter-default/commit/6c92742))
+* **analytics:** add Google Tag Manager ([782c854](https://github.com/gatsbyjs/gatsby-starter-default/commit/782c854))
+* **home:** improve SEO ([84d4a12](https://github.com/gatsbyjs/gatsby-starter-default/commit/84d4a12))
+
+
+
 ## [0.4.0](https://github.com/gatsbyjs/gatsby-starter-default/compare/v0.3.0...v0.4.0) (2019-05-18)
 
 
