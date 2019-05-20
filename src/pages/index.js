@@ -20,7 +20,12 @@ const IndexPage = () => (
     `}
     render={data => (
       <Layout>
-        <SEO title="Home" />
+        <SEO
+          description="I’m a Peruvian developer, designer and entrepreneur specialised in web
+          technologies."
+          title="Hi, I'm Eddybrando."
+          noTitleTemplate
+        />
         <Img
           className="profile-picture"
           fixed={data.image.childImageSharp.fixed}
