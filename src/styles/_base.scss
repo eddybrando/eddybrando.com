@@ -37,8 +37,12 @@ body {
   }
 }
 
-// Large screen grid
+// Large screen
 @media only screen and (min-width: $viewport-lg-min) {
+  body {
+    font-size: 22px;
+  }
+
   .page-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -53,6 +57,10 @@ body {
     .title {
       align-items: center;
       display: grid;
+    }
+
+    .headline {
+      font-size: 35px;
     }
   }
 
@@ -72,7 +80,7 @@ body {
   }
 }
 
-// Extra large screen grid
+// Extra large screen
 @media only screen and (min-width: $viewport-xl-min) {
   .header {
     padding-left: 160px;
