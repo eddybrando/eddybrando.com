@@ -1,5 +1,6 @@
 $viewport-sm-max: 767px;
 $viewport-lg-min: 768px;
+$viewport-xl-min: 1200px;
 
 body {
   font-family: "Josefin Sans";
@@ -36,7 +37,7 @@ body {
   }
 }
 
-// Large screens grid
+// Large screen grid
 @media only screen and (min-width: $viewport-lg-min) {
   .page-grid {
     display: grid;
@@ -68,5 +69,18 @@ body {
       align-items: center;
       display: grid;
     }
+  }
+}
+
+// Extra large screen grid
+@media only screen and (min-width: $viewport-xl-min) {
+  .header {
+    padding-left: 160px;
+    padding-right: 80px;
+  }
+
+  .main-container {
+    padding-left: 80px;
+    padding-right: 160px;
   }
 }
