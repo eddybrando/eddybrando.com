@@ -16,3 +16,13 @@ body {
   box-shadow: 10px 10px 0 $color-blue;
   margin-bottom: 30px;
 }
+
+// Large screens grid
+$viewport-lg: 768px;
+@media only screen and (min-width: $viewport-lg) {
+  .page-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100vh;
+  }
+}
