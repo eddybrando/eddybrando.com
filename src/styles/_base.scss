@@ -5,6 +5,11 @@ $viewport-xl-min: 1200px;
 body {
   font-family: "Josefin Sans";
   font-size: 16px;
+  line-height: 1.5;
+}
+
+h2 {
+  margin-top: 0;
 }
 
 .highlight {
@@ -14,6 +19,7 @@ body {
 .link-block {
   border-bottom: 3px solid black;
   color: black;
+  line-height: 1;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -47,7 +53,16 @@ body {
 // Large screen
 @media only screen and (min-width: $viewport-lg-min) {
   body {
-    font-size: 22px;
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 29px;
+    margin-bottom: 30px;
+  }
+
+  p {
+    margin-bottom: 27.5px;
   }
 
   .link-block {
@@ -81,6 +96,11 @@ body {
     }
   }
 
+  .main-container--full-height {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+
   .main-container--welcome {
     display: grid;
     grid-template-rows: 1fr 200px 1fr;
@@ -107,5 +127,10 @@ body {
   .main-container {
     padding-left: 80px;
     padding-right: 160px;
+  }
+
+  .main-container--full-height {
+    padding-bottom: 80px;
+    padding-top: 80px;
   }
 }
