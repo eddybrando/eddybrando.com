@@ -25,4 +25,14 @@ $viewport-lg: 768px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100vh;
   }
+
+  .header {
+    display: grid;
+    grid-template-rows: 1fr 242px 1fr;
+
+    .title {
+      align-items: center;
+      display: grid;
+    }
+  }
 }
