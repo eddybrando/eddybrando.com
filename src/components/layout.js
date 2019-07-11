@@ -3,9 +3,10 @@ import PropTypes from "prop-types"
 
 import Header from "./header"
 
-const Layout = ({ children, headerTitle, mainContainerClass }) => (
+const Layout = ({ children, headerTitle, mainContainerClass, nav }) => (
   <div className="page-grid">
     <Header
+      nav={nav}
       titleAppend={headerTitle.append}
       titleHighlight={headerTitle.highlight}
       titlePrepend={headerTitle.prepend}
@@ -22,10 +23,17 @@ Layout.propTypes = {
     prepend: PropTypes.string,
   }).isRequired,
   mainContainerClass: PropTypes.string,
+  nav: PropTypes.arrayOf(
+    PropTypes.shape({
+      label: PropTypes.string.isRequired,
+      link: PropTypes.string.isRequired,
+    }).isRequired
+  ),
 }
 
 Layout.defaultProps = {
   mainContainerClass: "",
+  nav: [],
 }
 
 export default Layout

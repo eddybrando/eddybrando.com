@@ -5,7 +5,10 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const SecondPage = () => (
-  <Layout headerTitle={{ prepend: "My ", highlight: "work" }}>
+  <Layout
+    headerTitle={{ prepend: "My ", highlight: "work" }}
+    nav={[{ label: "Home", link: "/" }]}
+  >
     <SEO title="Page two" />
     <h1>Hi from the second page</h1>
     <p>Welcome to page 2</p>
