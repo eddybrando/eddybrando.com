@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.1.0...v1.2.0) (2019-07-11)
+
+
+### Bug Fixes
+
+* **welcome:** use "className" ([db07461](https://github.com/gatsbyjs/gatsby-starter-default/commit/db07461))
+
+
+### Features
+
+* **welcome:** center title on the left panel ([8a3349e](https://github.com/gatsbyjs/gatsby-starter-default/commit/8a3349e))
+* **welcome:** increase font sizes ([78e726e](https://github.com/gatsbyjs/gatsby-starter-default/commit/78e726e))
+* **welcome:** increase horizontal paddings in xl viewports ([d48b83c](https://github.com/gatsbyjs/gatsby-starter-default/commit/d48b83c))
+* **welcome:** set main container grid ([7a18af3](https://github.com/gatsbyjs/gatsby-starter-default/commit/7a18af3))
+* **welcome:** style main container ([650e003](https://github.com/gatsbyjs/gatsby-starter-default/commit/650e003))
+
+
+
 ## [1.1.0](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.0.0...v1.1.0) (2019-07-11)
 
 
