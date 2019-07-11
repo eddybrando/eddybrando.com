@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.0.0...v1.1.0) (2019-07-11)
+
+
+### Features
+
+* **manifest:** set primary color ([b3a2a8b](https://github.com/gatsbyjs/gatsby-starter-default/commit/b3a2a8b))
+
+
+
 ## [1.0.0](https://github.com/gatsbyjs/gatsby-starter-default/compare/v0.4.0...v1.0.0) (2019-05-20)
 
 
