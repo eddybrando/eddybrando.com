@@ -10,7 +10,11 @@ const SecondPage = () => (
     mainContainerClass="main-container--full-height"
     nav={[{ label: "Home", link: "/" }]}
   >
-    <SEO title="Page two" />
+    <SEO
+      description="This is my work as a developer, designer and entrepreneur specialised in web
+          technologies."
+      title="My work"
+    />
     <h2>How it began</h2>
     <p>
       I started coding around 2003 at age 13 and drafted my first web designs
