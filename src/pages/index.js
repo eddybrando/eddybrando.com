@@ -19,21 +19,27 @@ const IndexPage = () => (
       }
     `}
     render={data => (
-      <Layout>
+      <Layout mainContainerClass="main-container--welcome">
         <SEO
           description="I’m a Peruvian developer, designer and entrepreneur specialised in web
           technologies."
           title="Hi, I'm Eddybrando."
           noTitleTemplate
         />
-        <Img
-          className="profile-picture"
-          fixed={data.image.childImageSharp.fixed}
-        />
-        <p>
-          I’m a Peruvian developer, designer and entrepreneur specialised in web
-          technologies.
-        </p>
+
+        <section className="profile-picture-container">
+          <Img
+            className="profile-picture"
+            fixed={data.image.childImageSharp.fixed}
+          />
+        </section>
+
+        <section className="description">
+          <p>
+            I’m a Peruvian developer, designer and entrepreneur specialised in
+            web technologies.
+          </p>
+        </section>
       </Layout>
     )}
   />

@@ -1,3 +1,7 @@
+$viewport-sm-max: 767px;
+$viewport-lg-min: 768px;
+$viewport-xl-min: 1200px;
+
 body {
   font-family: "Josefin Sans";
   font-size: 16px;
@@ -7,12 +11,84 @@ body {
   background: linear-gradient(180deg, transparent 20%, $color-yellow 20%);
 }
 
-.main-container {
+.header {
+  background-color: $color-blue;
   padding: 30px 40px;
   text-align: center;
+
+  .headline {
+    font-size: 25px;
+  }
+}
+
+.main-container {
+  padding: 30px 40px;
+
+  @media only screen and (max-width: $viewport-sm-max) {
+    text-align: center;
+  }
 }
 
 .profile-picture {
   box-shadow: 10px 10px 0 $color-blue;
-  margin-bottom: 30px;
+
+  @media only screen and (max-width: $viewport-sm-max) {
+    margin-bottom: 30px;
+  }
+}
+
+// Large screen
+@media only screen and (min-width: $viewport-lg-min) {
+  body {
+    font-size: 22px;
+  }
+
+  .page-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100vh;
+  }
+
+  .header {
+    display: grid;
+    grid-template-rows: 1fr 242px 1fr;
+    text-align: right;
+
+    .title {
+      align-items: center;
+      display: grid;
+    }
+
+    .headline {
+      font-size: 35px;
+    }
+  }
+
+  .main-container--welcome {
+    display: grid;
+    grid-template-rows: 1fr 242px 1fr;
+
+    .profile-picture-container {
+      align-items: end;
+      display: grid;
+    }
+
+    .description {
+      align-items: center;
+      display: grid;
+    }
+  }
+}
+
+// Extra large screen
+@media only screen and (min-width: $viewport-xl-min) {
+  .header {
+    padding-left: 160px;
+    padding-right: 80px;
+  }
+
+  .main-container {
+    padding-left: 80px;
+    padding-right: 160px;
+  }
 }
