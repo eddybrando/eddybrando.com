@@ -2,7 +2,7 @@
   "name": "eddybrando.com",
   "private": true,
   "description": "eddybrando.com",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "author": "Eddybrando Vásquez <mail@eddybrando.com>",
   "dependencies": {
     "gatsby": "^2.5.5",
