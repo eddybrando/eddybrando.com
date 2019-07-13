@@ -103,7 +103,7 @@ const SecondPage = () => {
             </p>
           </section>
 
-          <section>
+          <section className="work-companies">
             <h2>Some companies I've worked at</h2>
           </section>
 
