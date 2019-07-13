@@ -54,8 +54,12 @@ const SecondPage = () => {
       </section>
 
       {companies.map(({ company, role }, index) => (
-        <div>
-          {company} {role}
+        <div className="work-company-block" key={index}>
+          <div>Logo</div>
+          <div>
+            {company} {role}
+          </div>
+          <div className="col-date">2019 - Present</div>
         </div>
       ))}
     </Layout>

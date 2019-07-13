@@ -50,6 +50,16 @@ h2 {
   }
 }
 
+.work-company-block {
+  display: grid;
+  grid-template-columns: 80px auto 150px;
+  margin-bottom: 50px;
+
+  .col-date {
+    justify-self: end;
+  }
+}
+
 // Large screen
 @media only screen and (min-width: $viewport-lg-min) {
   body {
