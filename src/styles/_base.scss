@@ -1,6 +1,7 @@
 $viewport-sm-max: 767px;
 $viewport-lg-min: 768px;
 $viewport-xl-min: 1200px;
+$img-box-shadow: 10px 10px 0 $color-blue;
 
 body {
   font-family: "Josefin Sans";
@@ -44,7 +45,7 @@ h3 {
 }
 
 .profile-picture {
-  box-shadow: 10px 10px 0 $color-blue;
+  box-shadow: $img-box-shadow;
 
   @media only screen and (max-width: $viewport-sm-max) {
     margin-bottom: 30px;
@@ -62,6 +63,10 @@ h3 {
 
   .col-date {
     justify-self: end;
+  }
+
+  .company-logo {
+    box-shadow: $img-box-shadow;
   }
 
   &:last-child {

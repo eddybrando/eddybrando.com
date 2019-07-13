@@ -1,5 +1,6 @@
 import React from "react"
-
+import { graphql, StaticQuery } from "gatsby"
+import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -29,51 +30,71 @@ const SecondPage = () => {
   ]
 
   return (
-    <Layout
-      headerTitle={{ prepend: "My ", highlight: "work" }}
-      mainContainerClass="main-container--full-height"
-      nav={[{ label: "Home", link: "/" }]}
-    >
-      <SEO
-        description="This is my work as a developer, designer and entrepreneur specialised in web
+    <StaticQuery
+      query={graphql`
+        query {
+          logoIbm: file(relativePath: { eq: "logo-ibm.jpg" }) {
+            childImageSharp {
+              fixed(width: 50, height: 50) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
+        }
+      `}
+      render={data => (
+        <Layout
+          headerTitle={{ prepend: "My ", highlight: "work" }}
+          mainContainerClass="main-container--full-height"
+          nav={[{ label: "Home", link: "/" }]}
+        >
+          <SEO
+            description="This is my work as a developer, designer and entrepreneur specialised in web
           technologies."
-        title="My work"
-      />
+            title="My work"
+          />
 
-      <section className="how-it-began">
-        <h2>How it began</h2>
-        <p>
-          I started coding around 2003 at age 13 and drafted my first web
-          designs when I was 14.
-        </p>
+          <section className="how-it-began">
+            <h2>How it began</h2>
+            <p>
+              I started coding around 2003 at age 13 and drafted my first web
+              designs when I was 14.
+            </p>
 
-        <p>
-          Back then, my tech stack consisted of HTML 4, CSS 2 and Macromedia
-          Flash 7, along with the occasional JavaScript snippet.
-        </p>
+            <p>
+              Back then, my tech stack consisted of HTML 4, CSS 2 and Macromedia
+              Flash 7, along with the occasional JavaScript snippet.
+            </p>
 
-        <p>
-          My tools of choice were Macromedia Dreamweaver and Microsoft FrontPage
-          for code editing, and Yahoo! GeoCities or the free .tk domains host
-          for hosting.
-        </p>
-      </section>
+            <p>
+              My tools of choice were Macromedia Dreamweaver and Microsoft
+              FrontPage for code editing, and Yahoo! GeoCities or the free .tk
+              domains host for hosting.
+            </p>
+          </section>
 
-      <section>
-        <h2>Some companies I've worked at</h2>
-      </section>
+          <section>
+            <h2>Some companies I've worked at</h2>
+          </section>
 
-      {companies.map(({ company, date, role }, index) => (
-        <div className="work-company-block" key={index}>
-          <div>Logo</div>
-          <div>
-            <h3>{company}</h3>
-            <div className="font-small">{role}</div>
-          </div>
-          <div className="col-date">{date}</div>
-        </div>
-      ))}
-    </Layout>
+          {companies.map(({ company, date, role }, index) => (
+            <div className="work-company-block" key={index}>
+              <div>
+                <Img
+                  className="company-logo"
+                  fixed={data.logoIbm.childImageSharp.fixed}
+                />
+              </div>
+              <div>
+                <h3>{company}</h3>
+                <div className="font-small">{role}</div>
+              </div>
+              <div className="col-date">{date}</div>
+            </div>
+          ))}
+        </Layout>
+      )}
+    />
   )
 }
 
