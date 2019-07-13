@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.3.0...v1.4.0) (2019-07-13)
+
+
+### Features
+
+* **my-work:** adjust mobile alignment ([5ea6a95](https://github.com/gatsbyjs/gatsby-starter-default/commit/5ea6a95))
+* **my-work:** change position of dates in mobile ([6de7b8b](https://github.com/gatsbyjs/gatsby-starter-default/commit/6de7b8b))
+
+
+
 ## [1.3.0](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.2.1...v1.3.0) (2019-07-13)
 
 
