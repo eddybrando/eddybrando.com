@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.4.0...v1.5.0) (2019-07-13)
+
+
+### Features
+
+* **404:** pass header information ([97025da](https://github.com/gatsbyjs/gatsby-starter-default/commit/97025da))
+
+
+
 ## [1.4.0](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.3.0...v1.4.0) (2019-07-13)
 
 
