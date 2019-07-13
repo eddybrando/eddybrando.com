@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.2.1...v1.3.0) (2019-07-13)
+
+
+### Features
+
+* **my-work:** add copy ([91042c6](https://github.com/gatsbyjs/gatsby-starter-default/commit/91042c6))
+* **my-work:** add SEO ([45f42cc](https://github.com/gatsbyjs/gatsby-starter-default/commit/45f42cc))
+* **my-work:** adjust font size and margins ([96fa2b2](https://github.com/gatsbyjs/gatsby-starter-default/commit/96fa2b2))
+* **my-work:** align navigation ([5ba1c42](https://github.com/gatsbyjs/gatsby-starter-default/commit/5ba1c42))
+* **my-work:** define grid design of company block ([9db57cf](https://github.com/gatsbyjs/gatsby-starter-default/commit/9db57cf))
+* **my-work:** display company logo ([a36151b](https://github.com/gatsbyjs/gatsby-starter-default/commit/a36151b))
+* **my-work:** display correct company logos ([9a19522](https://github.com/gatsbyjs/gatsby-starter-default/commit/9a19522))
+* **my-work:** display list of companies ([511279f](https://github.com/gatsbyjs/gatsby-starter-default/commit/511279f))
+* **my-work:** link page ([92d7cf3](https://github.com/gatsbyjs/gatsby-starter-default/commit/92d7cf3))
+* **my-work:** pass navigation links as props ([a945884](https://github.com/gatsbyjs/gatsby-starter-default/commit/a945884))
+* **my-work:** update dates and adjust font design ([4862fda](https://github.com/gatsbyjs/gatsby-starter-default/commit/4862fda))
+
+
+
 ### [1.2.1](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.2.0...v1.2.1) (2019-07-11)
 
 
