@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -15,23 +14,29 @@ const SecondPage = () => (
           technologies."
       title="My work"
     />
-    <h2>How it began</h2>
-    <p>
-      I started coding around 2003 at age 13 and drafted my first web designs
-      when I was 14.
-    </p>
 
-    <p>
-      Back then, my tech stack was HTML 4, CSS 2 and Macromedia Flash 7, along
-      with the occasional JavaScript snippet.
-    </p>
+    <section className="how-it-began">
+      <h2>How it began</h2>
+      <p>
+        I started coding around 2003 at age 13 and drafted my first web designs
+        when I was 14.
+      </p>
 
-    <p>
-      My tools of choice were Macromedia Dreamweaver and Microsoft FrontPage for
-      code editing, and Yahoo! GeoCities or the free .tk domains host for
-      hosting.
-    </p>
-    <Link to="/">Go back to the homepage</Link>
+      <p>
+        Back then, my tech stack was HTML 4, CSS 2 and Macromedia Flash 7, along
+        with the occasional JavaScript snippet.
+      </p>
+
+      <p>
+        My tools of choice were Macromedia Dreamweaver and Microsoft FrontPage
+        for code editing, and Yahoo! GeoCities or the free .tk domains host for
+        hosting.
+      </p>
+    </section>
+
+    <section>
+      <h2>Some companies I've worked for</h2>
+    </section>
   </Layout>
 )
 

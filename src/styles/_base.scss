@@ -57,7 +57,7 @@ h2 {
   }
 
   h2 {
-    font-size: 29px;
+    font-size: 26px;
     margin-bottom: 30px;
   }
 
@@ -99,6 +99,10 @@ h2 {
   .main-container--full-height {
     padding-bottom: 40px;
     padding-top: 40px;
+
+    .how-it-began {
+      margin-bottom: 50px;
+    }
   }
 
   .main-container--welcome {
