@@ -65,7 +65,7 @@ h3 {
 
 .work-company-block {
   display: grid;
-  grid-template-columns: 80px auto 65px;
+  grid-template-columns: 80px auto;
   margin-bottom: 30px;
   text-align: left;
 
@@ -74,6 +74,7 @@ h3 {
   }
 
   .col-date {
+    display: none;
     justify-self: end;
     text-align: right;
   }
@@ -185,6 +186,14 @@ h3 {
 
     .work-company-block {
       grid-template-columns: 80px auto 150px;
+
+      .col-date {
+        display: block;
+      }
+
+      .inline-date {
+        display: none;
+      }
     }
   }
 }

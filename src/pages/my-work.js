@@ -116,7 +116,9 @@ const SecondPage = () => {
                 />
               </div>
               <div>
-                <h3>{company}</h3>
+                <h3>
+                  {company} <span className="inline-date">({date})</span>
+                </h3>
                 <div className="font-small">{role}</div>
               </div>
               <div className="col-date">{date}</div>
