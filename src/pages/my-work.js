@@ -9,22 +9,31 @@ const SecondPage = () => {
     {
       company: "IBM",
       date: "2019 - Present",
+      logoImg: "logoIbm",
       role: "Web developer, UI/UX designer",
     },
     {
       company: "KICKZ",
       date: "2018 - 2019",
+      logoImg: "logoKickz",
       role: "Web developer, architect, UI/UX designer",
     },
-    { company: "IBM", date: "2016 - 2018", role: "Web developer" },
     {
-      company: "Body Change",
+      company: "IBM",
+      date: "2016 - 2018",
+      logoImg: "logoIbm",
+      role: "Web developer",
+    },
+    {
+      company: "BodyChange",
       date: "2014 - 2015",
+      logoImg: "logoBodychange",
       role: "Web developer, UI designer, project manager",
     },
     {
       company: "Peruvian Embassy in Ecuador",
       date: "2008 - 2015",
+      logoImg: "logoPeru",
       role: "Web developer, UI/UX designer, graphic designer",
     },
   ]
@@ -34,6 +43,27 @@ const SecondPage = () => {
       query={graphql`
         query {
           logoIbm: file(relativePath: { eq: "logo-ibm.jpg" }) {
+            childImageSharp {
+              fixed(width: 50, height: 50) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
+          logoKickz: file(relativePath: { eq: "logo-kickz.jpg" }) {
+            childImageSharp {
+              fixed(width: 50, height: 50) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
+          logoBodychange: file(relativePath: { eq: "logo-bodychange.jpg" }) {
+            childImageSharp {
+              fixed(width: 50, height: 50) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
+          logoPeru: file(relativePath: { eq: "logo-peru.jpg" }) {
             childImageSharp {
               fixed(width: 50, height: 50) {
                 ...GatsbyImageSharpFixed
@@ -77,12 +107,12 @@ const SecondPage = () => {
             <h2>Some companies I've worked at</h2>
           </section>
 
-          {companies.map(({ company, date, role }, index) => (
+          {companies.map(({ company, date, logoImg, role }, index) => (
             <div className="work-company-block" key={index}>
               <div>
                 <Img
                   className="company-logo"
-                  fixed={data.logoIbm.childImageSharp.fixed}
+                  fixed={data[logoImg].childImageSharp.fixed}
                 />
               </div>
               <div>
