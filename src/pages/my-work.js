@@ -5,15 +5,25 @@ import SEO from "../components/seo"
 
 const SecondPage = () => {
   const companies = [
-    { company: "IBM", role: "Web developer, UI/UX designer" },
-    { company: "KICKZ", role: "Web developer, architect, UI/UX designer" },
-    { company: "IBM", role: "Web developer" },
+    {
+      company: "IBM",
+      date: "2019 - Present",
+      role: "Web developer, UI/UX designer",
+    },
+    {
+      company: "KICKZ",
+      date: "2018 - 2019",
+      role: "Web developer, architect, UI/UX designer",
+    },
+    { company: "IBM", date: "2016 - 2018", role: "Web developer" },
     {
       company: "Body Change",
+      date: "2014 - 2015",
       role: "Web developer, UI designer, project manager",
     },
     {
       company: "Peruvian Embassy in Ecuador",
+      date: "2008 - 2015",
       role: "Web developer, UI/UX designer, graphic designer",
     },
   ]
@@ -50,16 +60,17 @@ const SecondPage = () => {
       </section>
 
       <section>
-        <h2>Some companies I've worked for</h2>
+        <h2>Some companies I've worked at</h2>
       </section>
 
-      {companies.map(({ company, role }, index) => (
+      {companies.map(({ company, date, role }, index) => (
         <div className="work-company-block" key={index}>
           <div>Logo</div>
           <div>
-            {company} {role}
+            <h3>{company}</h3>
+            <div className="font-small">{role}</div>
           </div>
-          <div className="col-date">2019 - Present</div>
+          <div className="col-date">{date}</div>
         </div>
       ))}
     </Layout>
