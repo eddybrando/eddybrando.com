@@ -28,6 +28,7 @@ h3 {
 }
 
 .form-field {
+  display: grid;
   margin-bottom: 30px;
 
   label {
@@ -42,7 +43,6 @@ h3 {
     min-height: 25px;
     padding: 10px 15px;
     outline: none;
-    width: 100%;
 
     &:focus {
       border-color: $color-blue;
