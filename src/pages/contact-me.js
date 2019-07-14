@@ -14,19 +14,19 @@ const ContactMe = () => (
     />
     <div className="form-field">
       <label>Name</label>
-      <input className="field"></input>
+      <input className="field" />
     </div>
     <div className="form-field">
       <label>Company</label>
-      <input className="field"></input>
+      <input className="field" />
     </div>
     <div className="form-field">
       <label>E-mail address</label>
-      <input className="field"></input>
+      <input className="field" />
     </div>
     <div className="form-field">
       <label>Message</label>
-      <input className="field"></input>
+      <textarea className="field" rows="8" />
     </div>
     <a href="#" class="link-block">
       Send

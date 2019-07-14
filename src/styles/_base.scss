@@ -36,8 +36,12 @@ h3 {
   .field {
     background: $color-blue-light;
     border: 3px solid $color-blue-light;
-    height: 35px;
+    min-height: 35px;
     width: 100%;
+  }
+
+  textarea {
+    resize: none;
   }
 }
 
