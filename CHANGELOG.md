@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.4](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.5.3...v1.5.4) (2019-07-14)
+
+
+### Bug Fixes
+
+* **icons:** change location of icons in manifest due to Apache "/icons" mapping ([536852c](https://github.com/gatsbyjs/gatsby-starter-default/commit/536852c))
+
+
+
 ### [1.5.3](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.5.2...v1.5.3) (2019-07-13)
 
 
