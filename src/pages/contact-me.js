@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const SecondPage = () => {
+const ContactMe = () => {
   const companies = [
     {
       company: "IBM",
@@ -74,11 +74,11 @@ const SecondPage = () => {
       `}
       render={data => (
         <Layout
-          headerTitle={{ prepend: "My ", highlight: "work" }}
+          headerTitle={{ highlight: "Contact", append: " me" }}
           mainContainerClass="main-container--full-height"
           nav={[
             { label: "Home", link: "/" },
-            { label: "Contact me", link: "/contact-me" },
+            { label: "My work", link: "/my-work" },
           ]}
         >
           <SEO
@@ -133,4 +133,4 @@ const SecondPage = () => {
   )
 }
 
-export default SecondPage
+export default ContactMe
