@@ -29,29 +29,31 @@ class ContactMeComponent extends Component {
           description="Get in touch with me by using this awesome online form! (It's free!)"
           title="Contact me"
         />
-        <div className="form-field">
-          <label>Name</label>
-          <input className="field" />
-        </div>
-        <div className="form-field">
-          <label>Company</label>
-          <input className="field" />
-        </div>
-        <div className="form-field">
-          <label>E-mail address</label>
-          <input className="field" />
-        </div>
-        <div className="form-field">
-          <label>Message</label>
-          <textarea className="field" rows="8" />
-        </div>
-        <a
-          href="#"
-          onClick={this.handleSubmit.bind(this)}
-          className="link-block"
-        >
-          Send {this.state.count}
-        </a>
+        <form className="contact-form">
+          <div className="form-field">
+            <label>Name</label>
+            <input className="field" />
+          </div>
+          <div className="form-field">
+            <label>Company</label>
+            <input className="field" />
+          </div>
+          <div className="form-field">
+            <label>E-mail address</label>
+            <input className="field" />
+          </div>
+          <div className="form-field">
+            <label>Message</label>
+            <textarea className="field" rows="8" />
+          </div>
+          <a
+            href="#"
+            onClick={this.handleSubmit.bind(this)}
+            className="link-block"
+          >
+            Send {this.state.count}
+          </a>
+        </form>
       </Layout>
     )
   }
