@@ -26,6 +26,21 @@ h3 {
   text-transform: uppercase;
 }
 
+.form-field {
+  margin-bottom: 30px;
+
+  label {
+    display: block;
+  }
+
+  .field {
+    background: $color-blue-light;
+    border: 3px solid $color-blue-light;
+    height: 35px;
+    width: 100%;
+  }
+}
+
 .header {
   background-color: $color-blue;
   padding: 30px 40px;
