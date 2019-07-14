@@ -28,7 +28,7 @@ const ContactMe = () => (
       <label>Message</label>
       <textarea className="field" rows="8" />
     </div>
-    <a href="#" class="link-block">
+    <a href="#" className="link-block">
       Send
     </a>
   </Layout>
