@@ -2,6 +2,7 @@ $viewport-sm-max: 767px;
 $viewport-lg-min: 768px;
 $viewport-xl-min: 1200px;
 $img-box-shadow: 10px 10px 0 $color-blue;
+$font-small: 15px;
 
 body {
   font-family: "Josefin Sans";
@@ -31,13 +32,21 @@ h3 {
 
   label {
     display: block;
+    font-size: $font-small;
   }
 
   .field {
     background: $color-blue-light;
     border: 3px solid $color-blue-light;
-    min-height: 35px;
+    line-height: 1;
+    min-height: 25px;
+    padding: 10px 15px;
+    outline: none;
     width: 100%;
+
+    &:focus {
+      border-color: $color-blue;
+    }
   }
 
   textarea {
@@ -137,7 +146,7 @@ h3 {
   }
 
   .font-small {
-    font-size: 15px;
+    font-size: $font-small;
   }
 
   .link-block {
