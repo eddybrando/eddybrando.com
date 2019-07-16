@@ -24,8 +24,14 @@ class ContactMeComponent extends Component {
   handleSubmit(e) {
     e.preventDefault()
 
+    const { company, email, message, name } = this.state
+    const payload = { company, email, message, name }
+
     axios
-      .post(`${process.env.GATSBY_API_URL}/contact`, { captchaToken: 123 })
+      .post(`${process.env.GATSBY_API_URL}/contact`, {
+        captchaToken: 123,
+        ...payload,
+      })
       .then(res => {
         console.log(res)
       })
