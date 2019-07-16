@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import axios from "axios"
+import qs from "qs"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -28,10 +29,10 @@ class ContactMeComponent extends Component {
     const payload = { company, email, message, name }
 
     axios
-      .post(`${process.env.GATSBY_API_URL}/contact`, {
-        captchaToken: 123,
-        ...payload,
-      })
+      .post(
+        `${process.env.GATSBY_API_URL}/contact`,
+        qs.stringify({ captchaToken: 123, ...payload })
+      )
       .then(res => {
         console.log(res)
       })
