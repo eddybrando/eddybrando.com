@@ -64,7 +64,7 @@ class ContactMeComponent extends Component {
           <div className="form-field">
             <label>Name</label>
             <input
-              className="field"
+              className={`field ${errors.name && "has-error"}`}
               name="name"
               onChange={this.handleChange}
               value={this.state.name}
@@ -76,7 +76,7 @@ class ContactMeComponent extends Component {
           <div className="form-field">
             <label>Company</label>
             <input
-              className="field"
+              className={`field ${errors.company && "has-error"}`}
               name="company"
               onChange={this.handleChange}
               value={this.state.company}
@@ -88,7 +88,7 @@ class ContactMeComponent extends Component {
           <div className="form-field">
             <label>E-mail address</label>
             <input
-              className="field"
+              className={`field ${errors.email && "has-error"}`}
               name="email"
               onChange={this.handleChange}
               type="email"
@@ -101,7 +101,7 @@ class ContactMeComponent extends Component {
           <div className="form-field">
             <label>Message</label>
             <textarea
-              className="field"
+              className={`field ${errors.message && "has-error"}`}
               name="message"
               onChange={this.handleChange}
               rows="8"

@@ -53,6 +53,10 @@ h3 {
     &:focus {
       border-color: $color-blue;
     }
+
+    &.has-error {
+      border-color: $color-red;
+    }
   }
 
   textarea {
