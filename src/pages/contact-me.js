@@ -10,6 +10,7 @@ class ContactMeComponent extends Component {
     this.state = {
       company: "",
       email: "",
+      errors: {},
       message: "",
       name: "",
     }
@@ -36,8 +37,10 @@ class ContactMeComponent extends Component {
       .then(res => {
         console.log(res)
       })
-      .catch(rej => {
-        console.error(rej)
+      .catch(error => {
+        if (error.response && error.response.data) {
+          this.setState({ errors: error.response.data })
+        }
       })
   }
 
