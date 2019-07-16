@@ -45,6 +45,8 @@ class ContactMeComponent extends Component {
   }
 
   render() {
+    const { errors } = this.state
+
     return (
       <Layout
         headerTitle={{ highlight: "Contact", append: " me" }}
@@ -67,6 +69,9 @@ class ContactMeComponent extends Component {
               onChange={this.handleChange}
               value={this.state.name}
             />
+            {errors.name && (
+              <div className="field-error-message">{errors.name[0]}</div>
+            )}
           </div>
           <div className="form-field">
             <label>Company</label>
@@ -76,6 +81,9 @@ class ContactMeComponent extends Component {
               onChange={this.handleChange}
               value={this.state.company}
             />
+            {errors.company && (
+              <div className="field-error-message">{errors.company[0]}</div>
+            )}
           </div>
           <div className="form-field">
             <label>E-mail address</label>
@@ -86,6 +94,9 @@ class ContactMeComponent extends Component {
               type="email"
               value={this.state.email}
             />
+            {errors.email && (
+              <div className="field-error-message">{errors.email[0]}</div>
+            )}
           </div>
           <div className="form-field">
             <label>Message</label>
@@ -96,6 +107,9 @@ class ContactMeComponent extends Component {
               rows="8"
               value={this.state.message}
             />
+            {errors.message && (
+              <div className="field-error-message">{errors.message[0]}</div>
+            )}
           </div>
           <a href="#" onClick={this.handleSubmit} className="link-block">
             Send
