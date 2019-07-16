@@ -7,8 +7,10 @@ class ContactMeComponent extends Component {
   constructor(props) {
     super(props)
     this.state = {
+      company: "",
+      email: "",
+      message: "",
       name: "",
-      count: 0,
     }
 
     this.handleChange = this.handleChange.bind(this)
@@ -16,12 +18,12 @@ class ContactMeComponent extends Component {
   }
 
   handleChange(event) {
-    this.setState({ name: event.target.value })
+    this.setState({ [event.target.name]: event.target.value })
   }
 
   handleSubmit(e) {
     e.preventDefault()
-    this.setState({ count: this.state.count + 1 })
+
     axios
       .post(`${process.env.GATSBY_API_URL}/contact`, { captchaToken: 123 })
       .then(res => {
@@ -51,24 +53,42 @@ class ContactMeComponent extends Component {
             <label>Name</label>
             <input
               className="field"
-              value={this.state.name}
+              name="name"
               onChange={this.handleChange}
+              value={this.state.name}
             />
           </div>
           <div className="form-field">
             <label>Company</label>
-            <input className="field" />
+            <input
+              className="field"
+              name="company"
+              onChange={this.handleChange}
+              value={this.state.company}
+            />
           </div>
           <div className="form-field">
             <label>E-mail address</label>
-            <input className="field" />
+            <input
+              className="field"
+              name="email"
+              onChange={this.handleChange}
+              type="email"
+              value={this.state.email}
+            />
           </div>
           <div className="form-field">
             <label>Message</label>
-            <textarea className="field" rows="8" />
+            <textarea
+              className="field"
+              name="message"
+              onChange={this.handleChange}
+              rows="8"
+              value={this.state.message}
+            />
           </div>
           <a href="#" onClick={this.handleSubmit} className="link-block">
-            Send {this.state.count} {this.state.name}
+            Send
           </a>
         </form>
       </Layout>
