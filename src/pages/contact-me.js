@@ -13,6 +13,12 @@ class ContactMeComponent extends Component {
       errors: {},
       message: "",
       name: "",
+      lastValues: {
+        company: "",
+        email: "",
+        message: "",
+        name: "",
+      },
     }
 
     this.handleChange = this.handleChange.bind(this)
@@ -28,6 +34,8 @@ class ContactMeComponent extends Component {
 
     const { company, email, message, name } = this.state
     const payload = { company, email, message, name }
+
+    this.setState({ errors: {}, lastValues: { company, email, message, name } })
 
     axios
       .post(
@@ -45,7 +53,7 @@ class ContactMeComponent extends Component {
   }
 
   render() {
-    const { errors } = this.state
+    const { errors, lastValues } = this.state
 
     return (
       <Layout
@@ -64,50 +72,66 @@ class ContactMeComponent extends Component {
           <div className="form-field">
             <label>Name</label>
             <input
-              className={`field ${errors.name && "has-error"}`}
+              className={`field ${
+                errors.name && lastValues.name === this.state.name
+                  ? "has-error"
+                  : ""
+              }`}
               name="name"
               onChange={this.handleChange}
               value={this.state.name}
             />
-            {errors.name && (
+            {errors.name && lastValues.name === this.state.name && (
               <div className="field-error-message">{errors.name[0]}</div>
             )}
           </div>
           <div className="form-field">
             <label>Company</label>
             <input
-              className={`field ${errors.company && "has-error"}`}
+              className={`field ${
+                errors.company && lastValues.company === this.state.company
+                  ? "has-error"
+                  : ""
+              }`}
               name="company"
               onChange={this.handleChange}
               value={this.state.company}
             />
-            {errors.company && (
+            {errors.company && lastValues.company === this.state.company && (
               <div className="field-error-message">{errors.company[0]}</div>
             )}
           </div>
           <div className="form-field">
             <label>E-mail address</label>
             <input
-              className={`field ${errors.email && "has-error"}`}
+              className={`field ${
+                errors.email && lastValues.email === this.state.email
+                  ? "has-error"
+                  : ""
+              }`}
               name="email"
               onChange={this.handleChange}
               type="email"
               value={this.state.email}
             />
-            {errors.email && (
+            {errors.email && lastValues.email === this.state.email && (
               <div className="field-error-message">{errors.email[0]}</div>
             )}
           </div>
           <div className="form-field">
             <label>Message</label>
             <textarea
-              className={`field ${errors.message && "has-error"}`}
+              className={`field ${
+                errors.message && lastValues.message === this.state.message
+                  ? "has-error"
+                  : ""
+              }`}
               name="message"
               onChange={this.handleChange}
               rows="8"
               value={this.state.message}
             />
-            {errors.message && (
+            {errors.message && lastValues.message === this.state.message && (
               <div className="field-error-message">{errors.message[0]}</div>
             )}
           </div>
