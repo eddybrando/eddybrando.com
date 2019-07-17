@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.5.4...v1.6.0) (2019-07-17)
+
+
+### Features
+
+* **contact:** create page ([#3](https://github.com/gatsbyjs/gatsby-starter-default/issues/3)) ([a46a3f0](https://github.com/gatsbyjs/gatsby-starter-default/commit/a46a3f0))
+
+
+
 ### [1.5.4](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.5.3...v1.5.4) (2019-07-14)
 
 
