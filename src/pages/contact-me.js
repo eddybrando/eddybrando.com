@@ -1,8 +1,11 @@
 import React, { Component } from "react"
 import axios from "axios"
 import qs from "qs"
+import Recaptcha from "react-recaptcha"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+
+let recaptchaInstance = null
 
 class ContactMeComponent extends Component {
   constructor(props) {
@@ -22,17 +25,29 @@ class ContactMeComponent extends Component {
       },
     }
 
+    this.verifyCallback = this.verifyCallback.bind(this)
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
+  }
+
+  setRecaptchaInstance(e) {
+    recaptchaInstance = e
+  }
+
+  executeCaptcha(e) {
+    e.preventDefault()
+    recaptchaInstance.execute()
+  }
+
+  verifyCallback(captchaToken) {
+    this.handleSubmit(captchaToken)
   }
 
   handleChange(event) {
     this.setState({ [event.target.name]: event.target.value })
   }
 
-  handleSubmit(e) {
-    e.preventDefault()
-
+  handleSubmit(captchaToken) {
     const { company, email, message, name } = this.state
     const payload = { company, email, message, name }
 
@@ -45,7 +60,7 @@ class ContactMeComponent extends Component {
     axios
       .post(
         `${process.env.GATSBY_API_URL}/contact`,
-        qs.stringify({ captchaToken: 123, ...payload })
+        qs.stringify({ captchaToken, ...payload })
       )
       .then(res => {
         console.log(res)
@@ -154,12 +169,19 @@ class ContactMeComponent extends Component {
             </div>
           )}
 
+          <Recaptcha
+            ref={e => this.setRecaptchaInstance(e)}
+            sitekey="6LdaIK4UAAAAAEod-5aAdjYNLE_Ooko3-5UDtNYp"
+            size="invisible"
+            verifyCallback={this.verifyCallback}
+          />
+
           {isSubmitting ? (
             <div>Sending...</div>
           ) : (
             <a
               href="#"
-              onClick={this.handleSubmit}
+              onClick={this.executeCaptcha}
               disabled
               className="link-block"
             >
