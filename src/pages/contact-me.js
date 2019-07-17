@@ -25,6 +25,7 @@ class ContactMeComponent extends Component {
       },
     }
 
+    this.executeCaptcha = this.executeCaptcha.bind(this)
     this.verifyCallback = this.verifyCallback.bind(this)
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
@@ -36,6 +37,8 @@ class ContactMeComponent extends Component {
 
   executeCaptcha(e) {
     e.preventDefault()
+    this.setState({ isSubmitting: true, errors: {} })
+    recaptchaInstance.reset()
     recaptchaInstance.execute()
   }
 
@@ -51,11 +54,7 @@ class ContactMeComponent extends Component {
     const { company, email, message, name } = this.state
     const payload = { company, email, message, name }
 
-    this.setState({
-      isSubmitting: true,
-      errors: {},
-      lastValues: { company, email, message, name },
-    })
+    this.setState({ lastValues: { company, email, message, name } })
 
     axios
       .post(
