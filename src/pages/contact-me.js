@@ -135,6 +135,14 @@ class ContactMeComponent extends Component {
               <div className="field-error-message">{errors.message[0]}</div>
             )}
           </div>
+
+          {errors.captchaToken && (
+            <div className="field-error-message captcha-error">
+              Robot verification failed! You may be a robot 🤖. Please try again
+              if you're not.
+            </div>
+          )}
+
           <a href="#" onClick={this.handleSubmit} className="link-block">
             Send
           </a>
