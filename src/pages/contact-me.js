@@ -8,6 +8,7 @@ class ContactMeComponent extends Component {
   constructor(props) {
     super(props)
     this.state = {
+      isSubmitting: false,
       company: "",
       email: "",
       errors: {},
@@ -35,7 +36,11 @@ class ContactMeComponent extends Component {
     const { company, email, message, name } = this.state
     const payload = { company, email, message, name }
 
-    this.setState({ errors: {}, lastValues: { company, email, message, name } })
+    this.setState({
+      isSubmitting: true,
+      errors: {},
+      lastValues: { company, email, message, name },
+    })
 
     axios
       .post(
@@ -44,16 +49,18 @@ class ContactMeComponent extends Component {
       )
       .then(res => {
         console.log(res)
+        this.setState({ isSubmitting: false })
       })
       .catch(error => {
         if (error.response && error.response.data) {
           this.setState({ errors: error.response.data })
         }
+        this.setState({ isSubmitting: false })
       })
   }
 
   render() {
-    const { errors, lastValues } = this.state
+    const { isSubmitting, errors, lastValues } = this.state
 
     return (
       <Layout
@@ -77,6 +84,7 @@ class ContactMeComponent extends Component {
                   ? "has-error"
                   : ""
               }`}
+              disabled={isSubmitting}
               name="name"
               onChange={this.handleChange}
               value={this.state.name}
@@ -93,6 +101,7 @@ class ContactMeComponent extends Component {
                   ? "has-error"
                   : ""
               }`}
+              disabled={isSubmitting}
               name="company"
               onChange={this.handleChange}
               value={this.state.company}
@@ -109,6 +118,7 @@ class ContactMeComponent extends Component {
                   ? "has-error"
                   : ""
               }`}
+              disabled={isSubmitting}
               name="email"
               onChange={this.handleChange}
               type="email"
@@ -126,6 +136,7 @@ class ContactMeComponent extends Component {
                   ? "has-error"
                   : ""
               }`}
+              disabled={isSubmitting}
               name="message"
               onChange={this.handleChange}
               rows="8"
@@ -143,9 +154,18 @@ class ContactMeComponent extends Component {
             </div>
           )}
 
-          <a href="#" onClick={this.handleSubmit} className="link-block">
-            Send
-          </a>
+          {isSubmitting ? (
+            <div>Sending...</div>
+          ) : (
+            <a
+              href="#"
+              onClick={this.handleSubmit}
+              disabled
+              className="link-block"
+            >
+              Send
+            </a>
+          )}
         </form>
       </Layout>
     )
