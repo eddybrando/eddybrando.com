@@ -48,8 +48,15 @@ const IndexPage = () => (
         </section>
 
         <nav className="nav">
-          <Link className="link-block" to="/my-work">
+          <Link
+            className="link-block"
+            style={{ marginRight: 40 }}
+            to="/my-work"
+          >
             My work
+          </Link>
+          <Link className="link-block" to="/contact-me">
+            Contact me
           </Link>
         </nav>
       </Layout>

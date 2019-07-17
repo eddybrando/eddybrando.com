@@ -2,6 +2,7 @@ $viewport-sm-max: 767px;
 $viewport-lg-min: 768px;
 $viewport-xl-min: 1200px;
 $img-box-shadow: 10px 10px 0 $color-blue;
+$font-small: 15px;
 
 body {
   font-family: "Josefin Sans";
@@ -12,6 +13,10 @@ body {
 h2,
 h3 {
   margin-top: 0;
+}
+
+.captcha-error {
+  margin-bottom: 30px;
 }
 
 .highlight {
@@ -26,6 +31,43 @@ h3 {
   text-transform: uppercase;
 }
 
+.field-error-message {
+  color: $color-red;
+  font-size: $font-small;
+  margin-top: 10px;
+}
+
+.form-field {
+  display: grid;
+  margin-bottom: 30px;
+
+  label {
+    display: block;
+    font-size: $font-small;
+  }
+
+  .field {
+    background: $color-blue-light;
+    border: 3px solid $color-blue-light;
+    line-height: 1;
+    min-height: 25px;
+    padding: 10px 15px;
+    outline: none;
+
+    &:focus {
+      border-color: $color-blue;
+    }
+
+    &.has-error {
+      border-color: $color-red;
+    }
+  }
+
+  textarea {
+    resize: none;
+  }
+}
+
 .header {
   background-color: $color-blue;
   padding: 30px 40px;
@@ -33,6 +75,16 @@ h3 {
 
   .headline {
     font-size: 25px;
+  }
+}
+
+.header-links {
+  .link-block {
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
@@ -44,6 +96,10 @@ h3 {
   }
 }
 
+.main-container--centered {
+  display: grid;
+}
+
 .main-container--full-height {
   .how-it-began {
     text-align: left;
@@ -53,6 +109,10 @@ h3 {
   .work-companies {
     text-align: left;
   }
+}
+
+.contact-form {
+  text-align: left;
 }
 
 .profile-picture {
@@ -108,7 +168,7 @@ h3 {
   }
 
   .font-small {
-    font-size: 15px;
+    font-size: $font-small;
   }
 
   .link-block {
@@ -140,6 +200,10 @@ h3 {
     .headline {
       font-size: 35px;
     }
+  }
+
+  .main-container--centered {
+    align-items: center;
   }
 
   .main-container--full-height {

@@ -76,7 +76,10 @@ const SecondPage = () => {
         <Layout
           headerTitle={{ prepend: "My ", highlight: "work" }}
           mainContainerClass="main-container--full-height"
-          nav={[{ label: "Home", link: "/" }]}
+          nav={[
+            { label: "Home", link: "/" },
+            { label: "Contact me", link: "/contact-me" },
+          ]}
         >
           <SEO
             description="This is my work as a developer, designer and entrepreneur specialised in web

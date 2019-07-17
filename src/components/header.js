@@ -5,11 +5,13 @@ import { Link } from "gatsby"
 const Header = ({ nav, titleAppend, titleHighlight, titlePrepend }) => (
   <header className="header">
     <nav className="nav">
-      {nav.map(({ label, link }, index) => (
-        <Link key={index} to={link} className="link-block">
-          {label}
-        </Link>
-      ))}
+      <div className="header-links">
+        {nav.map(({ label, link }, index) => (
+          <Link key={index} to={link} className="link-block">
+            {label}
+          </Link>
+        ))}
+      </div>
     </nav>
 
     <section className="title">
