@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import Fade from "react-reveal/Fade"
 
 const Header = ({ nav, titleAppend, titleHighlight, titlePrepend }) => (
   <header className="header">
@@ -15,11 +16,13 @@ const Header = ({ nav, titleAppend, titleHighlight, titlePrepend }) => (
     </nav>
 
     <section className="title">
-      <h1 className="headline">
-        {titlePrepend}
-        <span className="highlight">{titleHighlight}</span>
-        {titleAppend}
-      </h1>
+      <Fade duration={750}>
+        <h1 className="headline">
+          {titlePrepend}
+          <span className="highlight">{titleHighlight}</span>
+          {titleAppend}
+        </h1>
+      </Fade>
     </section>
   </header>
 )

@@ -21,15 +21,14 @@ const IndexPage = () => (
       <Layout
         headerTitle={{
           prepend: "Hi, I'm ",
-          highlight: "Eddybrando",
-          append: ".",
+          highlight: "Eddybrando Vásquez",
         }}
         mainContainerClass="main-container--welcome"
       >
         <SEO
           description="I’m a Peruvian developer, designer and entrepreneur specialised in web
           technologies."
-          title="Hi, I'm Eddybrando."
+          title="Hi, I'm Eddybrando Vásquez"
           noTitleTemplate
         />
 
