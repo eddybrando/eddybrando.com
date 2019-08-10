@@ -15,15 +15,15 @@ const Header = ({ nav, titleAppend, titleHighlight, titlePrepend }) => (
       </div>
     </nav>
 
-    <section className="title">
-      <Fade duration={750}>
+    <Fade ssrFadeout duration={750}>
+      <section className="title">
         <h1 className="headline">
           {titlePrepend}
           <span className="highlight">{titleHighlight}</span>
           {titleAppend}
         </h1>
-      </Fade>
-    </section>
+      </section>
+    </Fade>
   </header>
 )
 
