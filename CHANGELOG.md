@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.9.0](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.8.1...v1.9.0) (2019-08-10)
+
+
+### Features
+
+* **layout:** add animated background shapes ([471d46e](https://github.com/gatsbyjs/gatsby-starter-default/commit/471d46e))
+
 ### [1.8.1](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.8.0...v1.8.1) (2019-08-10)
 
 
