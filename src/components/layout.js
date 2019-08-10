@@ -14,6 +14,12 @@ const Layout = ({ children, headerTitle, mainContainerClass, nav }) => (
     <Fade duration={500} delay={250}>
       <main className={`main-container ${mainContainerClass}`}>{children}</main>
     </Fade>
+
+    <div className="animated-bg">
+      {[...Array(10)].map(() => (
+        <div className="bg-element" />
+      ))}
+    </div>
   </div>
 )
 
