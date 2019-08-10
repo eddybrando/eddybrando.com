@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.8.1](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.8.0...v1.8.1) (2019-08-10)
+
+
+### Bug Fixes
+
+* **header:** prevent animation flickering ([1845f4b](https://github.com/gatsbyjs/gatsby-starter-default/commit/1845f4b))
+
 ## [1.8.0](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.7.1...v1.8.0) (2019-08-10)
 
 
