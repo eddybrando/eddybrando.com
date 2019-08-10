@@ -18,6 +18,7 @@ const ContactMeComponent = () => (
         <a
           className="link-block"
           href="https://www.linkedin.com/in/eddybrandovasquez/"
+          rel="noopener noreferrer"
           target="_blank"
         >
           LinkedIn
@@ -29,6 +30,7 @@ const ContactMeComponent = () => (
         <a
           className="link-block"
           href="https://www.xing.com/profile/Eddybrando_Vasquez/"
+          rel="noopener noreferrer"
           target="_blank"
         >
           Xing
