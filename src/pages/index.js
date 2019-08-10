@@ -3,6 +3,7 @@ import { graphql, Link, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Jello from "react-reveal/Jello"
 
 const IndexPage = () => (
   <StaticQuery
@@ -33,10 +34,12 @@ const IndexPage = () => (
         />
 
         <section className="profile-picture-container">
-          <Img
-            className="profile-picture"
-            fixed={data.image.childImageSharp.fixed}
-          />
+          <Jello>
+            <Img
+              className="profile-picture"
+              fixed={data.image.childImageSharp.fixed}
+            />
+          </Jello>
         </section>
 
         <section className="description">

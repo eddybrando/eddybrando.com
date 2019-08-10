@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-
+import Fade from "react-reveal/Fade"
 import Header from "./header"
 
 const Layout = ({ children, headerTitle, mainContainerClass, nav }) => (
@@ -11,7 +11,9 @@ const Layout = ({ children, headerTitle, mainContainerClass, nav }) => (
       titleHighlight={headerTitle.highlight}
       titlePrepend={headerTitle.prepend}
     />
-    <main className={`main-container ${mainContainerClass}`}>{children}</main>
+    <Fade duration={500} delay={250}>
+      <main className={`main-container ${mainContainerClass}`}>{children}</main>
+    </Fade>
   </div>
 )
 
