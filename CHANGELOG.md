@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.8.0](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.7.1...v1.8.0) (2019-08-10)
+
+
+### Features
+
+* **layout:**  animate transitions ([4595a81](https://github.com/gatsbyjs/gatsby-starter-default/commit/4595a81))
+* **welcome:** add last name and animate titles ([5b5be96](https://github.com/gatsbyjs/gatsby-starter-default/commit/5b5be96))
+
 ### [1.7.1](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.7.0...v1.7.1) (2019-08-10)
 
 
