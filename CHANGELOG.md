@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.7.1](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.7.0...v1.7.1) (2019-08-10)
+
+
+### Bug Fixes
+
+* **contact-me:** add `noopener noreferrer` to links ([b353d56](https://github.com/gatsbyjs/gatsby-starter-default/commit/b353d56))
+
 ## [1.7.0](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.6.0...v1.7.0) (2019-07-19)
 
 
