@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.9.1](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.9.0...v1.9.1) (2019-08-20)
+
+
+### Bug Fixes
+
+* **layout:** add missing keys to DOM elements ([344ee2d](https://github.com/gatsbyjs/gatsby-starter-default/commit/344ee2d))
+* **layout:** prevent horizontal background overflow ([2c31f68](https://github.com/gatsbyjs/gatsby-starter-default/commit/2c31f68))
+
 ## [1.9.0](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.8.1...v1.9.0) (2019-08-10)
 
 
