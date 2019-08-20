@@ -16,8 +16,8 @@ const Layout = ({ children, headerTitle, mainContainerClass, nav }) => (
     </Fade>
 
     <div className="animated-bg">
-      {[...Array(10)].map(() => (
-        <div className="bg-element" />
+      {[...Array(10)].map((cb, index) => (
+        <div className="bg-element" key={index} />
       ))}
     </div>
   </div>
