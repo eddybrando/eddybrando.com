@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.9.2](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.9.1...v1.9.2) (2019-08-20)
+
+
+### Bug Fixes
+
+* **layout:** fix animated background vertically in mobile ([9b935c8](https://github.com/gatsbyjs/gatsby-starter-default/commit/9b935c8))
+
 ### [1.9.1](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.9.0...v1.9.1) (2019-08-20)
 
 
