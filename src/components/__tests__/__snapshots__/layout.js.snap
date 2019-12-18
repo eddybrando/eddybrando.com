@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout renders correctly 1`] = `
+<div
+  className="page-grid"
+>
+  <header
+    className="header"
+  >
+    <nav
+      className="nav"
+    >
+      <div
+        className="header-links"
+      >
+        <a
+          className="link-block"
+          href="/"
+        >
+          First link
+        </a>
+        <a
+          className="link-block"
+          href="/second-link"
+        >
+          Second link
+        </a>
+      </div>
+    </nav>
+    <section
+      className="react-reveal title"
+      style={
+        Object {
+          "opacity": undefined,
+        }
+      }
+    >
+      <h1
+        className="headline"
+      >
+        Lorem
+        <span
+          className="highlight"
+        >
+          highlighted text
+        </span>
+        ipsum
+      </h1>
+    </section>
+  </header>
+  <main
+    className="react-reveal main-container foo-class"
+    style={
+      Object {
+        "opacity": undefined,
+      }
+    }
+  >
+    <div />
+  </main>
+  <div
+    className="animated-bg"
+  >
+    <div
+      className="bg-element"
+    />
+    <div
+      className="bg-element"
+    />
+    <div
+      className="bg-element"
+    />
+    <div
+      className="bg-element"
+    />
+    <div
+      className="bg-element"
+    />
+    <div
+      className="bg-element"
+    />
+    <div
+      className="bg-element"
+    />
+    <div
+      className="bg-element"
+    />
+    <div
+      className="bg-element"
+    />
+    <div
+      className="bg-element"
+    />
+  </div>
+</div>
+`;
