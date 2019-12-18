@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<header
+  className="header"
+>
+  <nav
+    className="nav"
+  >
+    <div
+      className="header-links"
+    >
+      <a
+        className="link-block"
+        href="/"
+      >
+        First link
+      </a>
+      <a
+        className="link-block"
+        href="/second-link"
+      >
+        Second link
+      </a>
+    </div>
+  </nav>
+  <section
+    className="react-reveal title"
+    style={
+      Object {
+        "opacity": undefined,
+      }
+    }
+  >
+    <h1
+      className="headline"
+    >
+      Lorem ipsum
+      <span
+        className="highlight"
+      >
+        highlighted text
+      </span>
+      dolor
+    </h1>
+  </section>
+</header>
+`;
