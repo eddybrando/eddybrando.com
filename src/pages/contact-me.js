@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const ContactMeComponent = () => (
+const ContactMePage = () => (
   <Layout
     headerTitle={{ highlight: "Contact", append: " me" }}
     mainContainerClass="main-container--centered"
@@ -41,4 +41,4 @@ const ContactMeComponent = () => (
   </Layout>
 )
 
-export default ContactMeComponent
+export default ContactMePage
