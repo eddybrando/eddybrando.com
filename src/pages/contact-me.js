@@ -23,8 +23,9 @@ const ContactMePage = () => (
         >
           LinkedIn
         </a>
-        . I do my best to try and answer ASAP.
+        .
       </p>
+      <p>I do my best to try and answer ASAP.</p>
     </div>
   </Layout>
 )
