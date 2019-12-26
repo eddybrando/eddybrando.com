@@ -13,12 +13,12 @@ module.exports = {
   },
   testURL: `http://localhost`,
   setupFiles: [`<rootDir>/loadershim.js`],
-  coverageThreshold: {
-    global: {
-      branches: 50, // TODO: target 80
-      functions: 70, // TODO: target 80
-      lines: 80,
-      statements: -10,
-    },
-  },
+  // coverageThreshold: {
+  //   global: {
+  //     branches: 80,
+  //     functions: 80,
+  //     lines: 80,
+  //     statements: -10,
+  //   },
+  // },
 }
