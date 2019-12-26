@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IndexPage renders correctly 1`] = `
+<Layout
+  headerTitle={
+    Object {
+      "highlight": "Eddybrando Vásquez",
+      "prepend": "Hi, I'm ",
+    }
+  }
+  mainContainerClass="main-container--welcome"
+  nav={Array []}
+>
+  <SEO
+    description="I’m a Peruvian developer, designer and entrepreneur specialised in web technologies."
+    lang="en"
+    meta={Array []}
+    noTitleTemplate={true}
+    title="Hi, I'm Eddybrando Vásquez"
+  />
+  <section
+    className="profile-picture-container"
+  >
+    <Jello>
+      <Image
+        Tag="div"
+        alt=""
+        className="profile-picture"
+        durationFadeIn={500}
+        fadeIn={true}
+        fixed={
+          Object {
+            "base64": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAUEAf/EABYBAQEBAAAAAAAAAAAAAAAAAAEAAv/aAAwDAQACEAMQAAABrSdOWaicjH0NcCf/xAAbEAACAwADAAAAAAAAAAAAAAABAgADERIiMf/aAAgBAQABBQLIbbLHqbUW57BywlFMHWVegnP/xAAWEQADAAAAAAAAAAAAAAAAAAABAiD/2gAIAQMBAT8BUR//xAAXEQEBAQEAAAAAAAAAAAAAAAABABAR/9oACAECAQE/AVuzn//EAB4QAAICAQUBAAAAAAAAAAAAAAABAhEhEhMiQWGx/9oACAEBAAY/Ah6ZbcUZavs4JWU3Et/TGBryxH//xAAbEAEAAwEBAQEAAAAAAAAAAAABABExIUFRYf/aAAgBAQABPyErC8sC6yj5PP1GRV/ciHJczZx1F8KTgjbbTs1gQQvyIuXJ/9oADAMBAAIAAwAAABCQF7//xAAZEQEAAgMAAAAAAAAAAAAAAAABACEQETH/2gAIAQMBAT8QHdxLh3H/xAAYEQADAQEAAAAAAAAAAAAAAAAAARExQf/aAAgBAgEBPxB/BNDBD//EAB4QAQACAwACAwAAAAAAAAAAAAEAESExUUGRcYHw/9oACAEBAAE/EOiriMT4Ud/sRW3FYwI8nzHIC20Ot+4ecKxt7eSKhOFWD6uWJgVYMOx4QvC7HJrZAM6J/9k=",
+            "height": 100,
+            "src": "/static/c0622cdd75216a49c855e9aaa099011e/f1b5a/eddybrando.jpg",
+            "srcSet": "/static/c0622cdd75216a49c855e9aaa099011e/f1b5a/eddybrando.jpg 1x,
+/static/c0622cdd75216a49c855e9aaa099011e/44086/eddybrando.jpg 1.5x,
+/static/c0622cdd75216a49c855e9aaa099011e/9067c/eddybrando.jpg 2x",
+            "width": 100,
+          }
+        }
+        loading="lazy"
+      />
+    </Jello>
+  </section>
+  <section
+    className="description"
+  >
+    <p>
+      I’m a Peruvian developer, designer and entrepreneur specialised in web technologies.
+    </p>
+  </section>
+  <nav
+    className="nav"
+  >
+    <mockConstructor
+      className="link-block"
+      style={
+        Object {
+          "marginRight": 40,
+        }
+      }
+      to="/my-work"
+    >
+      My work
+    </mockConstructor>
+    <mockConstructor
+      className="link-block"
+      to="/contact-me"
+    >
+      Contact me
+    </mockConstructor>
+  </nav>
+</Layout>
+`;

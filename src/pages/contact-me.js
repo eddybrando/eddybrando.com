@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const ContactMeComponent = () => (
+const ContactMePage = () => (
   <Layout
     headerTitle={{ highlight: "Contact", append: " me" }}
     mainContainerClass="main-container--centered"
@@ -23,22 +23,11 @@ const ContactMeComponent = () => (
         >
           LinkedIn
         </a>
-        . I do my best to try and answer ASAP.
+        .
       </p>
-      <p>
-        In case you're feeling German today, you can also reach over{" "}
-        <a
-          className="link-block"
-          href="https://www.xing.com/profile/Eddybrando_Vasquez/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Xing
-        </a>
-        . I don't check it as often tho.
-      </p>
+      <p>I do my best to try and answer ASAP.</p>
     </div>
   </Layout>
 )
 
-export default ContactMeComponent
+export default ContactMePage

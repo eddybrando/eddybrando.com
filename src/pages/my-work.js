@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const SecondPage = () => {
+export const PureMyWorkPage = ({ data }) => {
   const companies = [
     {
       company: "IBM",
@@ -39,98 +39,100 @@ const SecondPage = () => {
   ]
 
   return (
-    <StaticQuery
-      query={graphql`
-        query {
-          logoIbm: file(relativePath: { eq: "logo-ibm.jpg" }) {
-            childImageSharp {
-              fixed(width: 50, height: 50) {
-                ...GatsbyImageSharpFixed
-              }
-            }
-          }
-          logoKickz: file(relativePath: { eq: "logo-kickz.jpg" }) {
-            childImageSharp {
-              fixed(width: 50, height: 50) {
-                ...GatsbyImageSharpFixed
-              }
-            }
-          }
-          logoBodychange: file(relativePath: { eq: "logo-bodychange.jpg" }) {
-            childImageSharp {
-              fixed(width: 50, height: 50) {
-                ...GatsbyImageSharpFixed
-              }
-            }
-          }
-          logoPeru: file(relativePath: { eq: "logo-peru.jpg" }) {
-            childImageSharp {
-              fixed(width: 50, height: 50) {
-                ...GatsbyImageSharpFixed
-              }
-            }
-          }
-        }
-      `}
-      render={data => (
-        <Layout
-          headerTitle={{ prepend: "My ", highlight: "work" }}
-          mainContainerClass="main-container--full-height"
-          nav={[
-            { label: "Home", link: "/" },
-            { label: "Contact me", link: "/contact-me" },
-          ]}
-        >
-          <SEO
-            description="This is my work as a developer, designer and entrepreneur specialised in web
+    <Layout
+      headerTitle={{ prepend: "My ", highlight: "work" }}
+      mainContainerClass="main-container--full-height"
+      nav={[
+        { label: "Home", link: "/" },
+        { label: "Contact me", link: "/contact-me" },
+      ]}
+    >
+      <SEO
+        description="This is my work as a developer, designer and entrepreneur specialised in web
           technologies."
-            title="My work"
-          />
+        title="My work"
+      />
 
-          <section className="how-it-began">
-            <h2>How it began</h2>
-            <p>
-              I started coding around 2003 at age 13 and drafted my first web
-              designs when I was 14.
-            </p>
+      <section className="how-it-began">
+        <h2>How it began</h2>
+        <p>
+          I started coding around 2003 at age 13 and drafted my first web
+          designs when I was 14.
+        </p>
 
-            <p>
-              Back then, my tech stack consisted of HTML 4, CSS 2 and Macromedia
-              Flash 7, along with the occasional JavaScript snippet.
-            </p>
+        <p>
+          Back then, my tech stack consisted of HTML 4, CSS 2 and Macromedia
+          Flash 7, along with the occasional JavaScript snippet.
+        </p>
 
-            <p>
-              My tools of choice were Macromedia Dreamweaver and Microsoft
-              FrontPage for code editing, and Yahoo! GeoCities or the free .tk
-              domains host for hosting.
-            </p>
-          </section>
+        <p>
+          My tools of choice were Macromedia Dreamweaver and Microsoft FrontPage
+          for code editing, and Yahoo! GeoCities or the free .tk domains host
+          for hosting.
+        </p>
+      </section>
 
-          <section className="work-companies">
-            <h2>Some companies I've worked at</h2>
-          </section>
+      <section className="work-companies">
+        <h2>Some companies I've worked at</h2>
+      </section>
 
-          {companies.map(({ company, date, logoImg, role }, index) => (
-            <div className="work-company-block" key={index}>
-              <div>
-                <Img
-                  className="company-logo"
-                  fixed={data[logoImg].childImageSharp.fixed}
-                />
-              </div>
-              <div>
-                <h3>
-                  {company} <span className="inline-date">({date})</span>
-                </h3>
-                <div className="font-small">{role}</div>
-              </div>
-              <div className="col-date">{date}</div>
-            </div>
-          ))}
-        </Layout>
-      )}
-    />
+      {companies.map(({ company, date, logoImg, role }, index) => (
+        <div className="work-company-block" key={index}>
+          <div>
+            <Img
+              className="company-logo"
+              fixed={data[logoImg].childImageSharp.fixed}
+            />
+          </div>
+          <div>
+            <h3>
+              {company} <span className="inline-date">({date})</span>
+            </h3>
+            <div className="font-small">{role}</div>
+          </div>
+          <div className="col-date">{date}</div>
+        </div>
+      ))}
+    </Layout>
   )
 }
 
-export default SecondPage
+const MyWorkPage = () => (
+  <StaticQuery
+    query={graphql`
+      query {
+        logoIbm: file(relativePath: { eq: "logo-ibm.jpg" }) {
+          childImageSharp {
+            fixed(width: 50, height: 50) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+        logoKickz: file(relativePath: { eq: "logo-kickz.jpg" }) {
+          childImageSharp {
+            fixed(width: 50, height: 50) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+        logoBodychange: file(relativePath: { eq: "logo-bodychange.jpg" }) {
+          childImageSharp {
+            fixed(width: 50, height: 50) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+        logoPeru: file(relativePath: { eq: "logo-peru.jpg" }) {
+          childImageSharp {
+            fixed(width: 50, height: 50) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+      }
+    `}
+    render={data => <PureMyWorkPage data={data} />}
+  />
+)
+
+export default MyWorkPage
