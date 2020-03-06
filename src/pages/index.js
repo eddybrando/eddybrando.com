@@ -9,7 +9,7 @@ export const PureIndexPage = ({ data }) => (
   <Layout
     headerTitle={{
       prepend: "Hi, I'm ",
-      highlight: "Eddybrando Vásquez",
+      highlight: "Eddybrando",
     }}
     mainContainerClass="main-container--welcome"
   >

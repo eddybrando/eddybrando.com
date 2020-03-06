@@ -15,6 +15,10 @@ h3 {
   margin-top: 0;
 }
 
+.mb-0 {
+  margin-bottom: 0;
+}
+
 .highlight {
   background: linear-gradient(180deg, transparent 20%, $color-yellow 20%);
 }
@@ -66,7 +70,7 @@ h3 {
 
 .header {
   background-color: $color-blue;
-  padding: 30px 40px;
+  padding: 30px 40px 0;
   text-align: center;
 
   .headline {
@@ -196,6 +200,10 @@ h3 {
     .headline {
       font-size: 35px;
     }
+  }
+
+  .header-bg-curve {
+    display: none;
   }
 
   .main-container--centered {

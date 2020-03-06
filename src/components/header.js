@@ -17,7 +17,7 @@ const Header = ({ nav, titleAppend, titleHighlight, titlePrepend }) => (
 
     <Fade ssrFadeout duration={750}>
       <section className="title">
-        <h1 className="headline">
+        <h1 className="headline mb-0">
           {titlePrepend}
           <span className="highlight">{titleHighlight}</span>
           {titleAppend}
