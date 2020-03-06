@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.11.0](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.10.0...v1.11.0) (2020-03-06)
+
+
+### Features
+
+* animate profile picture ([a53434b](https://github.com/gatsbyjs/gatsby-starter-default/commit/a53434b0e0d733fe4f4d70822e60592142b8e480))
+
 ## [1.10.0](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.9.7...v1.10.0) (2020-03-06)
 
 
