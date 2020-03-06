@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.11.1](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.11.0...v1.11.1) (2020-03-06)
+
+
+### Bug Fixes
+
+* avoid white space over header bg curve ([0995d6e](https://github.com/gatsbyjs/gatsby-starter-default/commit/0995d6e91e45c599566769e057de058a268e7f6d))
+
 ## [1.11.0](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.10.0...v1.11.0) (2020-03-06)
 
 
