@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.10.0](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.9.7...v1.10.0) (2020-03-06)
+
+
+### Features
+
+* **header:** add header bg curve ([edbbaba](https://github.com/gatsbyjs/gatsby-starter-default/commit/edbbaba657d1173d14df4a516cae646eeec8c337))
+* **header:** adjust padding of main container ([9cca4c0](https://github.com/gatsbyjs/gatsby-starter-default/commit/9cca4c0d541914d1695e94c2350ecc9952fb0e8d))
+
 ### [1.9.7](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.9.6...v1.9.7) (2020-03-06)
 
 ### [1.9.6](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.9.5...v1.9.6) (2020-03-06)
