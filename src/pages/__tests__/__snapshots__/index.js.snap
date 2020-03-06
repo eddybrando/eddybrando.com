@@ -4,7 +4,7 @@ exports[`IndexPage renders correctly 1`] = `
 <Layout
   headerTitle={
     Object {
-      "highlight": "Eddybrando Vásquez",
+      "highlight": "Eddybrando",
       "prepend": "Hi, I'm ",
     }
   }

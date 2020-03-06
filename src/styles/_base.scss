@@ -89,7 +89,7 @@ h3 {
 }
 
 .main-container {
-  padding: 30px 40px;
+  padding: 0 40px 30px;
 
   @media only screen and (max-width: $viewport-sm-max) {
     text-align: center;
@@ -204,6 +204,10 @@ h3 {
 
   .header-bg-curve {
     display: none;
+  }
+
+  .main-container {
+    padding: 30px 40px;
   }
 
   .main-container--centered {

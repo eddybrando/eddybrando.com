@@ -33,7 +33,7 @@ exports[`Header renders correctly 1`] = `
     }
   >
     <h1
-      className="headline"
+      className="headline mb-0"
     >
       Lorem ipsum
       <span
