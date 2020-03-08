@@ -39,7 +39,7 @@ export const PureIndexPage = ({ data }) => (
 
     <nav className="nav">
       <LinkText label="My work" to="/my-work" style={{ marginRight: 40 }} />
-      <LinkText label="Contact me" to="/contact-me" style={{ marginRight: 40 }} />
+      <LinkText label="Contact me" to="/contact-me" />
     </nav>
   </Layout>
 )

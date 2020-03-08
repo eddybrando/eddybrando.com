@@ -64,11 +64,7 @@ exports[`IndexPage renders correctly 1`] = `
     />
     <LinkText
       label="Contact me"
-      style={
-        Object {
-          "marginRight": 40,
-        }
-      }
+      style={Object {}}
       to="/contact-me"
     />
   </nav>
