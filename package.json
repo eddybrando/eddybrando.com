@@ -2,7 +2,7 @@
   "name": "eddybrando.com",
   "private": true,
   "description": "eddybrando.com",
-  "version": "1.11.2",
+  "version": "1.12.0",
   "author": "Eddybrando Vásquez <mail@eddybrando.com>",
   "dependencies": {
     "@carbon/icons-react": "^10.9.1",

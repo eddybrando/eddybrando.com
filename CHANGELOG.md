@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.12.0](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.11.2...v1.12.0) (2020-03-08)
+
+
+### Features
+
+* **link:** add arrows to links ([2a03459](https://github.com/gatsbyjs/gatsby-starter-default/commit/2a03459c86bbf9ef05a25f6478b768b956ef3f43))
+
 ### [1.11.2](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.11.1...v1.11.2) (2020-03-06)
 
 
