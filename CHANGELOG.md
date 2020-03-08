@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.14.0](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.13.0...v1.14.0) (2020-03-08)
+
+
+### Features
+
+* remove unnecessary margin in home link ([c285d4b](https://github.com/gatsbyjs/gatsby-starter-default/commit/c285d4b396c1be88f790760bb9d74143ee35735a))
+
 ## [1.13.0](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.12.0...v1.13.0) (2020-03-08)
 
 
