@@ -4,6 +4,42 @@ $viewport-xl-min: 1200px;
 $img-box-shadow: 10px 10px 0 $color-blue;
 $font-small: 15px;
 
+@keyframes keyframesPendulum {
+    0% {
+      transform: rotate3d(0, 0, 1, 5deg);
+    }
+
+    50% {
+      transform: rotate3d(0, 0, 1, -5deg);
+    }
+
+    100% {
+      transform: rotate3d(0, 0, 1, 5deg);
+    }
+  }
+
+  @keyframes keyframesBorderRadius {
+    0% {
+      border-radius: 0;
+    }
+
+    25% {
+      border-radius: 50%;
+    }
+
+    50% {
+      border-radius: 10px;
+    }
+
+    75% {
+      border-radius: 30%;
+    }
+
+    100% {
+      border-radius: 0;
+    }
+  }
+
 body {
   font-family: "Josefin Sans";
   font-size: 16px;
@@ -138,45 +174,9 @@ h3 {
 }
 
 .profile-picture {
-  animation: animateProfilePicture 5s ease-in-out infinite,
-    animateProfilePictureBorder 15s ease-in-out infinite;
+  animation: keyframesPendulum 5s ease-in-out infinite,
+    keyframesBorderRadius 15s ease-in-out infinite;
   transform-origin: top center;
-
-  @keyframes animateProfilePicture {
-    0% {
-      transform: rotate3d(0, 0, 1, 5deg);
-    }
-
-    50% {
-      transform: rotate3d(0, 0, 1, -5deg);
-    }
-
-    100% {
-      transform: rotate3d(0, 0, 1, 5deg);
-    }
-  }
-
-  @keyframes animateProfilePictureBorder {
-    0% {
-      border-radius: 0;
-    }
-
-    25% {
-      border-radius: 50%;
-    }
-
-    50% {
-      border-radius: 10px;
-    }
-
-    75% {
-      border-radius: 30%;
-    }
-
-    100% {
-      border-radius: 0;
-    }
-  }
 
   @media only screen and (max-width: $viewport-sm-max) {
     margin-bottom: 30px;
