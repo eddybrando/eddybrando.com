@@ -38,8 +38,12 @@ exports[`ContactMePage renders correctly 1`] = `
         href="https://www.linkedin.com/in/eddybrandovasquez/"
         rel="noopener noreferrer"
         target="_blank"
+        title="Open my LinkedIn profile"
       >
-        LinkedIn
+        LinkedIn 
+        <ForwardRef(ArrowUpRight16)
+          className="link-arrow"
+        />
       </a>
       .
     </p>

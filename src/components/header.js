@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import LinkText from "../components/link-text";
 import Fade from "react-reveal/Fade"
 
 const Header = ({ nav, titleAppend, titleHighlight, titlePrepend }) => (
@@ -8,9 +8,7 @@ const Header = ({ nav, titleAppend, titleHighlight, titlePrepend }) => (
     <nav className="nav">
       <div className="header-links">
         {nav.map(({ label, link }, index) => (
-          <Link key={index} to={link} className="link-block">
-            {label}
-          </Link>
+          <LinkText key={index} label={label} to={link} />
         ))}
       </div>
     </nav>

@@ -5,6 +5,7 @@
   "version": "1.11.2",
   "author": "Eddybrando Vásquez <mail@eddybrando.com>",
   "dependencies": {
+    "@carbon/icons-react": "^10.9.1",
     "axios": "^0.19.2",
     "gatsby": "^2.19.32",
     "gatsby-image": "^2.2.43",

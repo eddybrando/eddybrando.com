@@ -23,12 +23,30 @@ h3 {
   background: linear-gradient(180deg, transparent 20%, $color-yellow 20%);
 }
 
+.link-arrow {
+  height: 1em;
+  vertical-align: -0.125em;
+}
+
 .link-block {
   border-bottom: 3px solid black;
   color: black;
   line-height: 1;
   text-decoration: none;
   text-transform: uppercase;
+
+  &:focus,
+  &:hover {
+    .link-arrow{
+    animation: animateLink .75s ease-in-out infinite;
+
+    @keyframes animateLink {
+      50% {
+        opacity: .25
+      }
+      }
+    }
+  }
 }
 
 .field-error-message {

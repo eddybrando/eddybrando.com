@@ -16,14 +16,58 @@ exports[`Layout renders correctly 1`] = `
         <a
           className="link-block"
           href="/"
+          style={Object {}}
+          title="First link"
         >
           First link
+           
+          <svg
+            aria-hidden={true}
+            className="link-arrow"
+            focusable="false"
+            height={16}
+            preserveAspectRatio="xMidYMid meet"
+            style={
+              Object {
+                "willChange": "transform",
+              }
+            }
+            viewBox="0 0 16 16"
+            width={16}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.3 3.7L13.1 7.5 1 7.5 1 8.5 13.1 8.5 9.3 12.3 10 13 15 8 10 3z"
+            />
+          </svg>
         </a>
         <a
           className="link-block"
           href="/second-link"
+          style={Object {}}
+          title="Second link"
         >
           Second link
+           
+          <svg
+            aria-hidden={true}
+            className="link-arrow"
+            focusable="false"
+            height={16}
+            preserveAspectRatio="xMidYMid meet"
+            style={
+              Object {
+                "willChange": "transform",
+              }
+            }
+            viewBox="0 0 16 16"
+            width={16}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.3 3.7L13.1 7.5 1 7.5 1 8.5 13.1 8.5 9.3 12.3 10 13 15 8 10 3z"
+            />
+          </svg>
         </a>
       </div>
     </nav>

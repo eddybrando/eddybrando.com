@@ -1,4 +1,5 @@
 import React from "react"
+import { ArrowUpRight16 } from '@carbon/icons-react';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -20,8 +21,9 @@ const ContactMePage = () => (
           href="https://www.linkedin.com/in/eddybrandovasquez/"
           rel="noopener noreferrer"
           target="_blank"
+          title="Open my LinkedIn profile"
         >
-          LinkedIn
+          LinkedIn <ArrowUpRight16 className="link-arrow" />
         </a>
         .
       </p>

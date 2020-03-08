@@ -53,23 +53,24 @@ exports[`IndexPage renders correctly 1`] = `
   <nav
     className="nav"
   >
-    <mockConstructor
-      className="link-block"
+    <LinkText
+      label="My work"
       style={
         Object {
           "marginRight": 40,
         }
       }
       to="/my-work"
-    >
-      My work
-    </mockConstructor>
-    <mockConstructor
-      className="link-block"
+    />
+    <LinkText
+      label="Contact me"
+      style={
+        Object {
+          "marginRight": 40,
+        }
+      }
       to="/contact-me"
-    >
-      Contact me
-    </mockConstructor>
+    />
   </nav>
 </Layout>
 `;

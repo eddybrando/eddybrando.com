@@ -1,6 +1,7 @@
 import React from "react"
-import { graphql, Link, StaticQuery } from "gatsby"
+import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import LinkText from "../components/link-text";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Jello from "react-reveal/Jello"
@@ -37,12 +38,8 @@ export const PureIndexPage = ({ data }) => (
     </section>
 
     <nav className="nav">
-      <Link className="link-block" style={{ marginRight: 40 }} to="/my-work">
-        My work
-      </Link>
-      <Link className="link-block" to="/contact-me">
-        Contact me
-      </Link>
+      <LinkText label="My work" to="/my-work" style={{ marginRight: 40 }} />
+      <LinkText label="Contact me" to="/contact-me" style={{ marginRight: 40 }} />
     </nav>
   </Layout>
 )
