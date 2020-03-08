@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.13.0](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.12.0...v1.13.0) (2020-03-08)
+
+
+### Features
+
+* **my-work:** add more working experience ([053ce5f](https://github.com/gatsbyjs/gatsby-starter-default/commit/053ce5f7d71cea55faf34617e82093a3fd3952bb))
+
 ## [1.12.0](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.11.2...v1.12.0) (2020-03-08)
 
 
