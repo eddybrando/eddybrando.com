@@ -206,6 +206,10 @@ h3 {
   &:last-child {
     margin-bottom: 0;
   }
+
+  &.no-img {
+    grid-template-columns: auto;
+  }
 }
 
 // Large screen
@@ -325,6 +329,10 @@ h3 {
 
       .inline-date {
         display: none;
+      }
+
+      &.no-img {
+        grid-template-columns: auto;
       }
     }
   }
