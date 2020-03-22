@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.15.0](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.14.1...v1.15.0) (2020-03-22)
+
+
+### Features
+
+* **my-work:** add "papelhigienicojusto" website ([#14](https://github.com/gatsbyjs/gatsby-starter-default/issues/14)) ([e1214a6](https://github.com/gatsbyjs/gatsby-starter-default/commit/e1214a6d2f981476862908562312c234d891c772))
+
 ### [1.14.1](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.14.0...v1.14.1) (2020-03-22)
 
 ## [1.14.0](https://github.com/gatsbyjs/gatsby-starter-default/compare/v1.13.0...v1.14.0) (2020-03-08)
