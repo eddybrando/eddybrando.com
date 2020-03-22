@@ -8,7 +8,8 @@ export const PureMyWorkPage = ({ data }) => {
   const companies = [
     {
       date: "2019 - Present",
-      details: "Tech stack: JavaScript, TypeScript; Angular, Vue.js; RxJs, Vuex; Node.js; GraphQL, MongoDB",
+      details:
+        "Tech stack: JavaScript, TypeScript; Angular, Vue.js; RxJs, Vuex; Node.js; GraphQL, MongoDB",
       headline: "IBM",
       lead: "Senior web developer (Team lead)",
       logoImg: "logoIbm",
@@ -41,38 +42,49 @@ export const PureMyWorkPage = ({ data }) => {
       lead: "Web developer",
       logoImg: "logoPeru",
     },
-  ];
+  ]
 
   const personalProjects = [
     {
       headline: "Eddybrando.com",
       lead: "Professional personal website",
-      details: "React-based PWA generated with GatsbyJS, powered by GraphQL and tested with Jest",
+      details:
+        "React-based PWA generated with GatsbyJS, powered by GraphQL and tested with Jest",
       linkLabel: "eddybrando.com",
       linkTo: "https://eddybrando.com",
     },
     {
       headline: "Podcasts en Español",
       lead: "Social network for podcast enthusiasts",
-      details: "Laravel-powered website with a PHP back end, a front end enhanced with Vue.js, and MySQL databases",
+      details:
+        "Laravel-powered website with a PHP back end, a front end enhanced with Vue.js, and MySQL databases",
       linkLabel: "podcastsenespanol.com",
       linkTo: "https://podcastsenespanol.com/",
     },
     {
       headline: "VioletaCast",
       lead: "Podcast producer website",
-      details: "Multilingual Laravel website written in PHP and Blade templates",
+      details:
+        "Multilingual Laravel website written in PHP and Blade templates",
       linkLabel: "violetacast.com",
       linkTo: "https://violetacast.com/en",
     },
     {
       headline: "Psicóloga Edith",
       lead: "Professional personal website",
-      details: "Vue.js-based website generated with Gridsome and connected to PHP Lumen micro-services",
+      details:
+        "Vue.js-based website generated with Gridsome and connected to PHP Lumen micro-services",
       linkLabel: "psicologaedith.com",
       linkTo: "https://psicologaedith.com/",
     },
-  ];
+    {
+      headline: "Papel Higiénico Justo",
+      lead: "Toilet paper usage calculator",
+      details: "Calculator website built with Svelte",
+      linkLabel: "papelhigienicojusto.com",
+      linkTo: "https://papelhigienicojusto.com/",
+    },
+  ]
 
   return (
     <Layout
@@ -127,17 +139,19 @@ export const PureMyWorkPage = ({ data }) => {
       <section className="work-companies">
         <h2>A few of my personal projects</h2>
       </section>
-      
-      {personalProjects.map(({ headline, lead, linkLabel, linkTo, details }, index) => (
-        <CompanyBlock
-          details={details}
-          headline={headline}
-          key={index}
-          lead={lead}
-          linkLabel={linkLabel}
-          linkTo={linkTo}
-        />
-      ))}
+
+      {personalProjects.map(
+        ({ headline, lead, linkLabel, linkTo, details }, index) => (
+          <CompanyBlock
+            details={details}
+            headline={headline}
+            key={index}
+            lead={lead}
+            linkLabel={linkLabel}
+            linkTo={linkTo}
+          />
+        )
+      )}
     </Layout>
   )
 }
