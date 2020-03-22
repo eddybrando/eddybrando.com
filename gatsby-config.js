@@ -14,6 +14,12 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+        publisherId: `ca-pub-1941556889579692`,
+      },
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
