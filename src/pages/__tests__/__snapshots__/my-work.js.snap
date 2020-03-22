@@ -424,5 +424,15 @@ exports[`MyWorkPage renders correctly 1`] = `
     linkTo="https://psicologaedith.com/"
     logoImg=""
   />
+  <CompanyBlock
+    data={Object {}}
+    date=""
+    details="Calculator website built with Svelte"
+    headline="Papel Higiénico Justo"
+    lead="Toilet paper usage calculator"
+    linkLabel="papelhigienicojusto.com"
+    linkTo="https://papelhigienicojusto.com/"
+    logoImg=""
+  />
 </Layout>
 `;
