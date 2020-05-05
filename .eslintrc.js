@@ -3,5 +3,12 @@ module.exports = {
     browser: true,
     node: true,
   },
-  extends: 'ibm',
+  extends: ['plugin:react/recommended', 'ibm'],
+  parserOptions: {
+    ecmaVersion: 6,
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
 };
