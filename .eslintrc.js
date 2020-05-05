@@ -11,4 +11,8 @@ module.exports = {
       jsx: true,
     },
   },
+  plugins: ['prettier', 'jest'],
+  rules: {
+    'prettier/prettier': 'error',
+  },
 };
