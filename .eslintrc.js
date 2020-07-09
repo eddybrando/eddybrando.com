@@ -1,7 +1,8 @@
 module.exports = {
   env: {
-    browser: true,
-    node: true,
+    'browser': true,
+    'jest/globals': true,
+    'node': true,
   },
   extends: ['plugin:react/recommended', 'ibm'],
   parserOptions: {

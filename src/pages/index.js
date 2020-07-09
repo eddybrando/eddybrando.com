@@ -1,16 +1,16 @@
-import React from "react"
-import { graphql, StaticQuery } from "gatsby"
-import Img from "gatsby-image"
-import LinkText from "../components/link-text";
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Jello from "react-reveal/Jello"
+import React from 'react';
+import {graphql, StaticQuery} from 'gatsby';
+import Img from 'gatsby-image';
+import LinkText from '../components/link-text';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import Jello from 'react-reveal/Jello';
 
-export const PureIndexPage = ({ data }) => (
+export const PureIndexPage = ({data}) => (
   <Layout
     headerTitle={{
-      prepend: "Hi, I'm ",
-      highlight: "Eddybrando",
+      prepend: 'Hi, I\'m ',
+      highlight: 'Eddybrando',
     }}
     mainContainerClass="main-container--welcome"
   >
@@ -38,17 +38,17 @@ export const PureIndexPage = ({ data }) => (
     </section>
 
     <nav className="nav">
-      <LinkText label="My work" to="/my-work" style={{ marginRight: 40 }} />
+      <LinkText label="My work" to="/my-work" style={{marginRight: 40}} />
       <LinkText label="Contact me" to="/contact-me" />
     </nav>
   </Layout>
-)
+);
 
 const IndexPage = () => (
   <StaticQuery
     query={graphql`
       query {
-        image: file(relativePath: { eq: "eddybrando.jpg" }) {
+        image: file(relativePath: {eq: "eddybrando.jpg"}) {
           childImageSharp {
             fixed(width: 100, height: 100) {
               ...GatsbyImageSharpFixed
@@ -57,8 +57,8 @@ const IndexPage = () => (
         }
       }
     `}
-    render={data => <PureIndexPage data={data} />}
+    render={(data) => <PureIndexPage data={data} />}
   />
-)
+);
 
-export default IndexPage
+export default IndexPage;
