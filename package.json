@@ -4,59 +4,44 @@
   "description": "eddybrando.com",
   "version": "1.15.2",
   "author": "Eddybrando Vásquez <mail@eddybrando.com>",
-  "dependencies": {
-    "@carbon/icons-react": "^10.9.1",
-    "axios": "^0.19.2",
-    "gatsby": "^2.19.32",
-    "gatsby-image": "^2.2.43",
-    "gatsby-plugin-google-adsense": "^1.1.3",
-    "gatsby-plugin-google-tagmanager": "^2.1.26",
-    "gatsby-plugin-manifest": "^2.2.44",
-    "gatsby-plugin-offline": "^3.0.37",
-    "gatsby-plugin-react-helmet": "^3.1.23",
-    "gatsby-plugin-sass": "^2.1.30",
-    "gatsby-plugin-sharp": "^2.4.7",
-    "gatsby-plugin-web-font-loader": "^1.0.4",
-    "gatsby-source-filesystem": "^2.1.50",
-    "gatsby-transformer-sharp": "^2.3.17",
-    "node-sass": "^4.13.1",
-    "normalize.css": "^8.0.1",
-    "prop-types": "^15.7.2",
-    "qs": "^6.9.1",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "react-helmet": "^5.2.1",
-    "react-reveal": "^1.2.2"
-  },
-  "devDependencies": {
-    "babel-jest": "^25.1.0",
-    "babel-preset-gatsby": "^0.2.31",
-    "identity-obj-proxy": "^3.0.0",
-    "jest": "^25.1.0",
-    "npm-check": "^5.9.2",
-    "prettier": "^1.19.1",
-    "react-test-renderer": "^16.13.0",
-    "standard-version": "^7.1.0"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "jest --coverage",
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore",
+    "lint": "prettier --check .",
+    "lint-fix": "prettier --write .",
     "release": "standard-version",
+    "test": "jest --coverage",
     "upgrade-interactive": "npm-check --update"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.29",
+    "@fortawesome/free-solid-svg-icons": "^5.13.1",
+    "@fortawesome/vue-fontawesome": "^0.1.10",
+    "@gridsome/plugin-sitemap": "^0.4.0",
+    "gridsome": "^0.7.0",
+    "gridsome-plugin-gtm": "^0.1.1",
+    "normalize.css": "^8.0.1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/eddybrando/eddybrando.com"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/eddybrando/eddybrando.com/issues"
+  },
+  "devDependencies": {
+    "@vue/test-utils": "^1.0.3",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^26.1.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^26.1.0",
+    "jest-serializer-vue": "^2.0.2",
+    "node-sass": "^4.14.1",
+    "npm-check": "^5.9.2",
+    "prettier": "^2.0.5",
+    "sass-loader": "^9.0.2",
+    "standard-version": "^8.0.0",
+    "vue-jest": "^3.0.6"
   }
 }

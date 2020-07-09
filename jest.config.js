@@ -1,24 +1,21 @@
 module.exports = {
-  transform: {
-    "^.+\\.jsx?$": `<rootDir>/jest-preprocess.js`,
-  },
+  collectCoverage: true,
+  collectCoverageFrom: [
+    "<rootDir>/src/**/*.{js,vue}",
+    "!**/node_modules/**",
+    "!<rootDir>/src/main.js",
+  ],
+  coverageReporters: ["html", "text", "text-summary"],
+  moduleFileExtensions: ["js", "json", "vue"],
   moduleNameMapper: {
-    ".+\\.(css|styl|less|sass|scss)$": `identity-obj-proxy`,
-    ".+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": `<rootDir>/__mocks__/file-mock.js`,
+    "^@/(.*)$": "<rootDir>/src/$1",
+    "^~/(.*)$": "<rootDir>/src/$1",
   },
-  testPathIgnorePatterns: [`node_modules`, `.cache`, `public`],
-  transformIgnorePatterns: [`node_modules/(?!(gatsby)/)`],
-  globals: {
-    __PATH_PREFIX__: ``,
+  modulePaths: ["<rootDir>/src"],
+  snapshotSerializers: ["jest-serializer-vue"],
+  testMatch: ["<rootDir>/src/**/__tests__/**/*.js", "!<rootDir>/src/main.js"],
+  transform: {
+    ".*\\.vue$": "vue-jest",
+    "^.+\\.js$": "babel-jest",
   },
-  testURL: `http://localhost`,
-  setupFiles: [`<rootDir>/loadershim.js`],
-  // coverageThreshold: {
-  //   global: {
-  //     branches: 80,
-  //     functions: 80,
-  //     lines: 80,
-  //     statements: -10,
-  //   },
-  // },
-}
+};

@@ -1,4 +1,5 @@
 *.log
+*.md
 .cache
 .DS_Store
 src/.temp
@@ -7,3 +8,4 @@ coverage
 dist
 .env
 .env.*
+.github
