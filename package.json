@@ -29,10 +29,16 @@
     "url": "https://github.com/eddybrando/eddybrando.com/issues"
   },
   "devDependencies": {
+    "@vue/test-utils": "^1.0.3",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^26.1.0",
+    "babel-preset-env": "^1.7.0",
     "jest": "^26.1.0",
+    "jest-serializer-vue": "^2.0.2",
     "node-sass": "^4.14.1",
     "npm-check": "^5.9.2",
     "sass-loader": "^9.0.2",
-    "standard-version": "^8.0.0"
+    "standard-version": "^8.0.0",
+    "vue-jest": "^3.0.6"
   }
 }

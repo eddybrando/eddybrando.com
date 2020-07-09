@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextLink renders correctly 1`] = `
+<g-link-stub title="Home" to="/home" class="link">
+  Home
+  <font-awesome-icon-stub icon="[object Object]" class="arrow"></font-awesome-icon-stub>
+</g-link-stub>
+`;
