@@ -1,0 +1,7 @@
+!.eslintrc.js
+!.prettierrc.js
+
+__mocks__
+coverage
+node_modules
+public

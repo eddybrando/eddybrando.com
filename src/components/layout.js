@@ -1,9 +1,9 @@
-import React from "react"
-import PropTypes from "prop-types"
-import Fade from "react-reveal/Fade"
-import Header from "./header"
+import React from 'react';
+import PropTypes from 'prop-types';
+import Fade from 'react-reveal/Fade';
+import Header from './header';
 
-const Layout = ({ children, headerTitle, mainContainerClass, nav }) => (
+const Layout = ({children, headerTitle, mainContainerClass, nav}) => (
   <div className="page-grid">
     <Header
       nav={nav}
@@ -34,7 +34,7 @@ const Layout = ({ children, headerTitle, mainContainerClass, nav }) => (
       ))}
     </div>
   </div>
-)
+);
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
@@ -48,13 +48,13 @@ Layout.propTypes = {
     PropTypes.shape({
       label: PropTypes.string.isRequired,
       link: PropTypes.string.isRequired,
-    }).isRequired
+    }).isRequired,
   ),
-}
+};
 
 Layout.defaultProps = {
-  mainContainerClass: "",
+  mainContainerClass: '',
   nav: [],
-}
+};
 
-export default Layout
+export default Layout;
