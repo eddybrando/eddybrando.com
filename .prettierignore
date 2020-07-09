@@ -1,0 +1,11 @@
+*.log
+*.md
+.cache
+.DS_Store
+src/.temp
+node_modules
+coverage
+dist
+.env
+.env.*
+.github

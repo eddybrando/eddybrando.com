@@ -1,6 +1,6 @@
 <template>
   <g-link class="link" :title="label" :to="to">
-    {{label}}
+    {{ label }}
     <font-awesome-icon class="arrow" :icon="linkIcon" />
   </g-link>
 </template>
@@ -12,19 +12,19 @@ export default {
   computed: {
     linkIcon() {
       return faArrowRight;
-    }
+    },
   },
 
   props: {
     label: {
       required: true,
-      type: String
+      type: String,
     },
     to: {
       required: true,
-      type: String
-    }
-  }
+      type: String,
+    },
+  },
 };
 </script>
 

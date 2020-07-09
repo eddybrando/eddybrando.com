@@ -6,14 +6,14 @@
 
     <div>
       <h3>
-        {{headline}}
-        <span v-if="date" class="inline-date">{{date}}</span>
+        {{ headline }}
+        <span v-if="date" class="inline-date">{{ date }}</span>
       </h3>
       <div class="font-small" v-text="lead" />
-      <div class="font-small" style="opacity: 0.4" v-text="details" />
+      <div class="font-small" style="opacity: 0.4;" v-text="details" />
     </div>
 
-    <div v-if="date" class="col-date">{{date}}</div>
+    <div v-if="date" class="col-date">{{ date }}</div>
 
     <div v-if="linkLabel && linkTo">
       <TextLink :label="linkLabel" :to="linkTo" />
@@ -30,44 +30,44 @@ export default {
   computed: {
     imgSrc() {
       return require("~/assets/img/" + this.logoImg);
-    }
+    },
   },
 
   props: {
     date: {
       default: "",
       required: false,
-      type: String
+      type: String,
     },
     details: {
       default: "",
       required: false,
-      type: String
+      type: String,
     },
     headline: {
       required: true,
-      type: String
+      type: String,
     },
     logoImg: {
       default: "",
       required: false,
-      type: String
+      type: String,
     },
     lead: {
       required: true,
-      type: String
+      type: String,
     },
     linkLabel: {
       default: "",
       required: false,
-      type: String
+      type: String,
     },
     linkTo: {
       default: "",
       required: false,
-      type: String
-    }
-  }
+      type: String,
+    },
+  },
 };
 </script>
 

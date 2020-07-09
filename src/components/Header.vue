@@ -3,7 +3,7 @@
     <nav class="nav">
       <div>
         <TextLink
-          v-for="({label, link}) in nav"
+          v-for="{ label, link } in nav"
           class="link-block"
           :key="label"
           :label="label"
@@ -15,9 +15,9 @@
     <transition name="fade" appear>
       <section class="title">
         <h1 class="headline mb-0">
-          {{titlePrepend}}
+          {{ titlePrepend }}
           <span class="highlight" v-text="titleHighlight" />
-          {{titleAppend}}
+          {{ titleAppend }}
         </h1>
       </section>
     </transition>
@@ -33,21 +33,21 @@ export default {
   props: {
     nav: {
       required: true,
-      type: Array
+      type: Array,
     },
     titleAppend: {
       required: true,
-      type: String
+      type: String,
     },
     titleHighlight: {
       required: true,
-      type: String
+      type: String,
     },
     titlePrepend: {
       required: true,
-      type: String
-    }
-  }
+      type: String,
+    },
+  },
 };
 </script>
 

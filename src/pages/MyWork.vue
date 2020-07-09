@@ -3,7 +3,10 @@
     headerTitleHighlight="work"
     headerTitlePrepend="My"
     mainContainerClass="main-container--full-height"
-    :nav="[{ label: 'Home', link: '/' }, { label: 'Contact me', link: '/contact-me' }]"
+    :nav="[
+      { label: 'Home', link: '/' },
+      { label: 'Contact me', link: '/contact-me' },
+    ]"
   >
     <div class="main-container">
       <div>
@@ -20,9 +23,9 @@
           </p>
 
           <p>
-            My tools of choice were Macromedia Dreamweaver and Microsoft FrontPage
-            for code editing, and Yahoo! GeoCities or the free .tk domains host
-            for hosting.
+            My tools of choice were Macromedia Dreamweaver and Microsoft
+            FrontPage for code editing, and Yahoo! GeoCities or the free .tk
+            domains host for hosting.
           </p>
         </section>
 
@@ -31,7 +34,8 @@
         </section>
 
         <CompanyBlock
-          v-for="({date, details, headline, lead, logoImg }, index) in companies"
+          v-for="({ date, details, headline, lead, logoImg },
+          index) in companies"
           :date="date"
           :details="details"
           :headline="headline"
@@ -45,7 +49,8 @@
         </section>
 
         <CompanyBlock
-          v-for="({ details, headline, lead, linkLabel, linkTo }, index) in personalProjects"
+          v-for="({ details, headline, lead, linkLabel, linkTo },
+          index) in personalProjects"
           :details="details"
           :headline="headline"
           :key="`personal-project-${index}`"
@@ -72,36 +77,36 @@ export default {
           "Tech stack: JavaScript, TypeScript; Angular, Vue.js; RxJs, Vuex; Node.js; GraphQL, MongoDB",
         headline: "IBM",
         lead: "Senior web developer (Team lead)",
-        logoImg: "logo-ibm.jpg"
+        logoImg: "logo-ibm.jpg",
       },
       {
         date: "2018 - 2019",
         details: "Tech stack: JavaScript, JSP; Vue.js; Vuex; Java, PHP",
         headline: "KICKZ (Zalando)",
         lead: "Lead web developer",
-        logoImg: "logo-kickz.jpg"
+        logoImg: "logo-kickz.jpg",
       },
       {
         date: "2016 - 2018",
         details: "Tech stack: JavaScript; React, Vue.js; Redux; Node.js",
         headline: "IBM",
         lead: "Web developer",
-        logoImg: "logo-ibm.jpg"
+        logoImg: "logo-ibm.jpg",
       },
       {
         date: "2014 - 2015",
         details: "Tech stack: JavaScript; PHP; WordPress",
         headline: "BodyChange",
         lead: "Web developer",
-        logoImg: "logo-bodychange.jpg"
+        logoImg: "logo-bodychange.jpg",
       },
       {
         date: "2008 - 2015",
         details: "Tech stack: JavaScript; PHP; Joomla",
         headline: "Peruvian Embassy in Ecuador",
         lead: "Web developer",
-        logoImg: "logo-peru.jpg"
-      }
+        logoImg: "logo-peru.jpg",
+      },
     ],
 
     personalProjects: [
@@ -111,7 +116,7 @@ export default {
         details:
           "React-based PWA generated with GatsbyJS, powered by GraphQL and tested with Jest",
         linkLabel: "eddybrando.com",
-        linkTo: "https://eddybrando.com"
+        linkTo: "https://eddybrando.com",
       },
       {
         headline: "Podcasts en Español",
@@ -119,7 +124,7 @@ export default {
         details:
           "Laravel-powered website with a PHP back end, a front end enhanced with Vue.js, and MySQL databases",
         linkLabel: "podcastsenespanol.com",
-        linkTo: "https://podcastsenespanol.com/"
+        linkTo: "https://podcastsenespanol.com/",
       },
       {
         headline: "VioletaCast",
@@ -127,7 +132,7 @@ export default {
         details:
           "Multilingual Laravel website written in PHP and Blade templates",
         linkLabel: "violetacast.com",
-        linkTo: "https://violetacast.com/en"
+        linkTo: "https://violetacast.com/en",
       },
       {
         headline: "Psicóloga Edith",
@@ -135,16 +140,16 @@ export default {
         details:
           "Vue.js-based website generated with Gridsome and connected to PHP Lumen micro-services",
         linkLabel: "psicologaedith.com",
-        linkTo: "https://psicologaedith.com/"
+        linkTo: "https://psicologaedith.com/",
       },
       {
         headline: "Papel Higiénico Justo",
         lead: "Toilet paper usage calculator",
         details: "Calculator website built with Svelte",
         linkLabel: "papelhigienicojusto.com",
-        linkTo: "https://papelhigienicojusto.com/"
-      }
-    ]
+        linkTo: "https://papelhigienicojusto.com/",
+      },
+    ],
   }),
 
   metaInfo: {
@@ -153,10 +158,10 @@ export default {
       {
         name: "description",
         content:
-          "This is my work as a developer, designer and entrepreneur specialised in web technologies."
-      }
-    ]
-  }
+          "This is my work as a developer, designer and entrepreneur specialised in web technologies.",
+      },
+    ],
+  },
 };
 </script>
 

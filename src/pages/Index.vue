@@ -13,7 +13,7 @@
       </section>
 
       <nav>
-        <TextLink label="My work" to="/my-work" style="margin-right: 40px" />
+        <TextLink label="My work" to="/my-work" style="margin-right: 40px;" />
         <TextLink label="Contact me" to="/contact-me" />
       </nav>
     </div>
@@ -32,10 +32,10 @@ export default {
       {
         name: "description",
         content:
-          "I’m a Peruvian developer, designer and entrepreneur specialised in web technologies."
-      }
-    ]
-  }
+          "I’m a Peruvian developer, designer and entrepreneur specialised in web technologies.",
+      },
+    ],
+  },
 };
 </script>
 

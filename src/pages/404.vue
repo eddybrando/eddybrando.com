@@ -17,8 +17,8 @@
 <script>
 export default {
   metaInfo: {
-    title: "404: Not found"
-  }
+    title: "404: Not found",
+  },
 };
 </script>
 

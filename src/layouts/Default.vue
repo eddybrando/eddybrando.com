@@ -7,7 +7,11 @@
       :titlePrepend="headerTitlePrepend"
     />
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="header-bg-curve">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+      class="header-bg-curve"
+    >
       <path
         fill="#bfd4f7"
         fill-opacity="1"
@@ -37,30 +41,30 @@ export default {
     headerTitleAppend: {
       default: "",
       required: false,
-      type: String
+      type: String,
     },
     headerTitleHighlight: {
       required: true,
-      type: String
+      type: String,
     },
     headerTitlePrepend: {
       default: "",
       required: false,
-      type: String
+      type: String,
     },
 
     mainContainerClass: {
       default: "",
       required: false,
-      type: String
+      type: String,
     },
 
     nav: {
       default: () => [],
       required: false,
-      type: Array
-    }
-  }
+      type: Array,
+    },
+  },
 };
 </script>
 

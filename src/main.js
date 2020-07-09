@@ -3,7 +3,7 @@ import DefaultLayout from "~/layouts/Default.vue";
 import "normalize.css/normalize.css";
 import "~/assets/css/base.scss";
 
-export default function(Vue, { router, head, isClient }) {
+export default function (Vue, { router, head, isClient }) {
   Vue.component("font-awesome-icon", FontAwesomeIcon);
   Vue.component("Layout", DefaultLayout);
 

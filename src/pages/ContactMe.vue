@@ -2,7 +2,10 @@
   <Layout
     headerTitleHighlight="Contact"
     headerTitleAppend="me"
-    :nav="[{ label: 'Home', link: '/' }, { label: 'My work', link: '/my-work' }]"
+    :nav="[
+      { label: 'Home', link: '/' },
+      { label: 'My work', link: '/my-work' },
+    ]"
   >
     <div class="main-container">
       <section>
@@ -32,10 +35,10 @@ export default {
       {
         name: "description",
         content:
-          "Get in touch with me by using one of this awesome platforms! (It's free!)"
-      }
-    ]
-  }
+          "Get in touch with me by using one of this awesome platforms! (It's free!)",
+      },
+    ],
+  },
 };
 </script>
 
