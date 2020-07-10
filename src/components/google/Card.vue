@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <g-link v-if="to" class="link" :to="to">
+    <g-link v-if="to" class="link" :title="title" :to="to">
       <div class="location" v-text="location" />
       <div class="title" v-text="title" />
     </g-link>
