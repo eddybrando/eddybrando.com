@@ -1,6 +1,6 @@
 <template>
   <div class="count">
-    About {{ count }} results ({{ $options.requestTime }} seconds)
+    About {{ count }} {{ resultsLabel }} ({{ $options.requestTime }} seconds)
   </div>
 </template>
 
@@ -8,6 +8,12 @@
 export default {
   created() {
     this.$options.requestTime = Math.floor(Math.random() * 100) / 100;
+  },
+
+  computed: {
+    resultsLabel() {
+      return this.count === 1 ? "result" : "results";
+    },
   },
 
   props: {
