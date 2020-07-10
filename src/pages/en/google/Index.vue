@@ -1,6 +1,6 @@
 <template>
   <GoogleLayout>
-    <Count :count="1" :requestTime="0.2" />
+    <Count :count="1" />
 
     <div class="main-container">
       <section class="profile-picture-container">

@@ -1,15 +1,17 @@
 <template>
-  <div class="count">About {{ count }} results ({{ requestTime }} seconds)</div>
+  <div class="count">
+    About {{ count }} results ({{ $options.requestTime }} seconds)
+  </div>
 </template>
 
 <script>
 export default {
+  created() {
+    this.$options.requestTime = Math.floor(Math.random() * 100) / 100;
+  },
+
   props: {
     count: {
-      required: true,
-      type: Number,
-    },
-    requestTime: {
       required: true,
       type: Number,
     },
