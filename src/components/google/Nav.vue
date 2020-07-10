@@ -39,5 +39,10 @@ export default {
   font-size: 13px;
   padding: 16px 12px 12px 10px;
   text-decoration: none;
+
+  &.active--exact {
+    color: $blue;
+    border-bottom: 3px solid $blue;
+  }
 }
 </style>
