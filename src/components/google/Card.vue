@@ -1,7 +1,14 @@
 <template>
   <div class="card">
-    <div class="location" v-text="location" />
-    <div class="title" v-text="title" />
+    <g-link v-if="to" class="link" :to="to">
+      <div class="location" v-text="location" />
+      <div class="title" v-text="title" />
+    </g-link>
+    <div v-else>
+      <div class="location" v-text="location" />
+      <div class="title" v-text="title" />
+    </div>
+
     <div class="description">
       <span v-if="showDate" class="date"
         >{{ startDateFormatted }} - {{ endDateFormatted }} -</span
@@ -45,6 +52,11 @@ export default {
       required: true,
       type: String,
     },
+    to: {
+      default: "",
+      required: false,
+      type: String,
+    },
   },
 
   computed: {
@@ -68,6 +80,18 @@ export default {
 
 .date {
   color: $gray-dark;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    .title {
+      text-decoration: underline;
+    }
+  }
 }
 
 .title {
