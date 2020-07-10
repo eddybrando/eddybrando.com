@@ -18,6 +18,6 @@ export default {
 
 .nav {
   border-bottom: $border;
-  padding-left: $lg-margin-left;
+  padding-left: $main-margin-left-lg;
 }
 </style>
