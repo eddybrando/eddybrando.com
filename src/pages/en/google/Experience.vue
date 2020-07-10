@@ -1,9 +1,6 @@
 <template>
   <GoogleLayout>
-    <div class="count">
-      About {{ experiencesCount }} results ({{ $options.requestTime }}
-      seconds)
-    </div>
+    <Count :count="experiencesCount" :requestTime="$options.requestTime" />
 
     <div
       v-for="{
@@ -54,13 +51,14 @@ query {
 
 <script>
 import moment from "moment";
+import Count from "~/components/google/Count";
 import GoogleLayout from "~/layouts/Google";
 
 const dateFormat = "MMM YYYY";
 const fakeRequestTime = Math.floor(Math.random() * 100) / 100;
 
 export default {
-  components: { GoogleLayout },
+  components: { Count, GoogleLayout },
 
   created() {
     this.$options.requestTime = fakeRequestTime;
@@ -110,11 +108,5 @@ export default {
     line-height: 1.3;
     margin: 4px 0;
   }
-}
-
-.count {
-  color: $gray-dark;
-  margin-bottom: 10px;
-  padding: 11px 0;
 }
 </style>

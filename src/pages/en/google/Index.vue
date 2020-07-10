@@ -1,5 +1,7 @@
 <template>
   <GoogleLayout>
+    <Count :count="1" :requestTime="0.2" />
+
     <div class="main-container">
       <section class="profile-picture-container">
         <g-image class="profile-picture" src="~/assets/img/eddybrando.jpg" />
@@ -16,10 +18,11 @@
 </template>
 
 <script>
+import Count from "~/components/google/Count";
 import GoogleLayout from "~/layouts/Google";
 
 export default {
-  components: { GoogleLayout },
+  components: { Count, GoogleLayout },
 
   metaInfo: {
     title: "Eddybrando Vásquez - Google Search",
