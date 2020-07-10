@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.1](https://github.com/eddybrando/eddybrando.com/compare/v2.1.0...v2.1.1) (2020-07-10)
+
+
+### Bug Fixes
+
+* **layout:** scope body layouts ([c7807b4](https://github.com/eddybrando/eddybrando.com/commit/c7807b4bb83a1d4393e5819d397695b0997912d2))
+
 ## [2.1.0](https://github.com/eddybrando/eddybrando.com/compare/v2.0.0...v2.1.0) (2020-07-10)
 
 
