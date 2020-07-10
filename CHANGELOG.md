@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.2](https://github.com/eddybrando/eddybrando.com/compare/v2.1.1...v2.1.2) (2020-07-10)
+
+
+### Bug Fixes
+
+* correct link to GitHub ([340b7e3](https://github.com/eddybrando/eddybrando.com/commit/340b7e30c9957ddcb46150aa50082887c988caaf))
+
 ### [2.1.1](https://github.com/eddybrando/eddybrando.com/compare/v2.1.0...v2.1.1) (2020-07-10)
 
 
