@@ -18,7 +18,7 @@ export default {
 @import "~/assets/css/google/variables";
 
 .main {
-  padding: 8px;
+  padding: $main-spacing-sm;
 }
 
 @media only screen and (min-width: $viewport-lg-min) {

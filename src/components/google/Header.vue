@@ -18,6 +18,12 @@ export default {
 
 .nav {
   border-bottom: $border;
-  padding-left: $main-margin-left-lg;
+  padding: 0 $main-spacing-sm;
+}
+
+@media only screen and (min-width: $viewport-lg-min) {
+  .nav {
+    padding-left: $main-margin-left-lg;
+  }
 }
 </style>
