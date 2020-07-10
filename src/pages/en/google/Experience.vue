@@ -9,9 +9,11 @@
       v-for="{
         company,
         description,
+        endDate,
         id,
         locationCity,
         locationCountry,
+        startDate,
         title,
       } in experiences"
       class="card"
@@ -19,7 +21,13 @@
     >
       <div class="location">{{ locationCountry }} › {{ locationCity }}</div>
       <div class="title">{{ title }} - {{ company }}</div>
-      <div class="description">{{ description }}</div>
+      <div class="description">
+        <span class="time"
+          >{{ startDate }} - <span v-if="endDate">{{ endDate }}</span
+          ><span v-else>Present</span> -</span
+        >
+        {{ description }}
+      </div>
     </div>
   </GoogleLayout>
 </template>
@@ -32,9 +40,11 @@ query {
       node {
         company
         description
+        endDate
         id
         locationCity
         locationCountry
+        startDate
         title
       }
     }
@@ -43,8 +53,10 @@ query {
 </page-query>
 
 <script>
+import moment from "moment";
 import GoogleLayout from "~/layouts/Google";
 
+const dateFormat = "MMM YYYY";
 const fakeRequestTime = Math.floor(Math.random() * 100) / 100;
 
 export default {
@@ -56,7 +68,11 @@ export default {
 
   computed: {
     experiences() {
-      return this.$page.experiences.edges.map(({ node }) => node);
+      return this.$page.experiences.edges.map(({ node }) => ({
+        ...node,
+        endDate: node.endDate ? moment(node.endDate).format(dateFormat) : null,
+        startDate: moment(node.startDate).format(dateFormat),
+      }));
     },
 
     experiencesCount() {
@@ -84,7 +100,7 @@ export default {
 .card {
   margin-bottom: 27px;
 
-  .location {
+  .time {
     color: $gray-dark;
   }
 
@@ -92,8 +108,7 @@ export default {
     color: $blue;
     font-size: 20px;
     line-height: 1.3;
-    padding-top: 4px;
-    margin-bottom: 3px;
+    margin: 4px 0;
   }
 }
 
