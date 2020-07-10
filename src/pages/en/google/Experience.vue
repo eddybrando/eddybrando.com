@@ -6,11 +6,18 @@
     </div>
 
     <div
-      v-for="{ company, description, id, location, title } in experiences"
+      v-for="{
+        company,
+        description,
+        id,
+        locationCity,
+        locationCountry,
+        title,
+      } in experiences"
       class="card"
       :key="id"
     >
-      <div class="location">{{ location }}</div>
+      <div class="location">{{ locationCountry }} › {{ locationCity }}</div>
       <div class="title">{{ title }} - {{ company }}</div>
       <div class="description">{{ description }}</div>
     </div>
@@ -26,7 +33,8 @@ query {
         company
         description
         id
-        location
+        locationCity
+        locationCountry
         title
       }
     }
