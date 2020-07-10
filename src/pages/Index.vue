@@ -12,19 +12,31 @@
         </p>
       </section>
 
-      <nav>
+      <nav class="nav">
         <TextLink label="My work" to="/my-work" style="margin-right: 40px;" />
         <TextLink label="Contact me" to="/contact-me" />
       </nav>
+
+      <div>
+        <font-awesome-icon :icon="paletteIcon" />
+        <TextLink label="Google mode" to="/en/google" />
+      </div>
     </div>
   </Layout>
 </template>
 
 <script>
 import TextLink from "~/components/TextLink";
+import { faPalette } from "@fortawesome/free-solid-svg-icons";
 
 export default {
   components: { TextLink },
+
+  computed: {
+    paletteIcon() {
+      return faPalette;
+    },
+  },
 
   metaInfo: {
     title: "Hi, I'm Eddybrando Vásquez",
@@ -51,6 +63,10 @@ export default {
 }
 
 @media only screen and (max-width: $viewport-sm-max) {
+  .nav {
+    margin-bottom: 30px;
+  }
+
   .profile-picture {
     margin-bottom: 30px;
   }
@@ -64,7 +80,7 @@ export default {
 
   .main-container {
     display: grid;
-    grid-template-rows: 1fr 200px 1fr;
+    grid-template-rows: 1fr 200px 1fr auto;
     height: 100%;
   }
 
