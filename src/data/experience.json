@@ -1,14 +1,26 @@
 [
   {
-    "company": "IBM",
-    "description": "Worked in multiple Vue.js, React and Angular teams as front end development lead and senior software engineer, whilst also helping in back end and DevOps tasks and architecting the software design of a complex cloud solution for a major client. As IBM Front End Developers Community Coordinator, worked on internal assets to improve DX, created education material and helped crafting the global career paths for front end developers. Got recognised with an IBM Outstanding Technical Achievement Award.",
+    "company": "Social Media Interactive",
+    "description": "Designed, developed and managed various online marketing web projects. Improved build and assets optimisation processes and reduced bundle build time cycles from 10 minutes to 8 seconds.",
     "location": "Munich, Germany",
-    "title": "Senior Web Developer"
+    "title": "Web Developer"
+  },
+  {
+    "company": "IBM",
+    "description": "Was part of the team that migrated a big legacy application from a major airline to React/Redux, and lead the maintenance team for the old codebase. Spoke at a coding conference in 2018, developed internal assets, contributed as an AngularJS mentor and was recognised as IBM Developer Ambassador and member of the IBM Top Technical Talent Organisation.",
+    "location": "Munich, Germany",
+    "title": "Web Developer"
   },
   {
     "company": "Kickz (Zalando)",
     "description": "Led the web development team in the migration of the front end architecture from JSPs to a Vue/Vuex application, worked on API definitions and created small micro-services. Designed the new UI from scratch and coordinated A/B testing strategies that resulted in an increase of more than 15% in conversion rates.",
     "location": "Munich, Germany",
     "title": "Lead Web Developer"
+  },
+  {
+    "company": "IBM",
+    "description": "Worked in multiple Vue.js, React and Angular teams as front end development lead and senior software engineer, whilst also helping in back end and DevOps tasks and architecting the software design of a complex cloud solution for a major client. As IBM Front End Developers Community Coordinator, worked on internal assets to improve DX, created education material and helped crafting the global career paths for front end developers. Got recognised with an IBM Outstanding Technical Achievement Award.",
+    "location": "Munich, Germany",
+    "title": "Senior Web Developer"
   }
 ]
