@@ -21,6 +21,7 @@
     "@gridsome/plugin-sitemap": "^0.4.0",
     "gridsome": "^0.7.0",
     "gridsome-plugin-gtm": "^0.1.1",
+    "moment": "^2.27.0",
     "normalize.css": "^8.0.1"
   },
   "repository": {
