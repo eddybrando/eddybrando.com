@@ -27,12 +27,13 @@ $search-box-padding-x: 16px;
 
 .logo-img {
   height: 30px;
-  padding-left: 30px;
+  margin: 0 auto 14px;
   width: 92px;
 }
 
 .logo-link {
   display: flex;
+  justify-items: center;
 }
 
 .nav {
@@ -56,16 +57,25 @@ $search-box-padding-x: 16px;
 
 .top-section {
   align-items: center;
-  display: grid;
-  grid-template-columns: ($main-margin-left-lg - $search-box-padding-x) (
-      $main-width-lg + ($search-box-padding-x * 2)
-    ) 1fr;
   margin-top: 20px;
+  padding: $main-spacing-sm;
 }
 
 @media only screen and (min-width: $viewport-lg-min) {
+  .logo-img {
+    margin: auto;
+  }
+
   .nav {
     padding-left: $main-margin-left-lg;
+  }
+
+  .top-section {
+    display: grid;
+    grid-template-columns: ($main-margin-left-lg - $search-box-padding-x) (
+        $main-width-lg + ($search-box-padding-x * 2)
+      ) 1fr;
+    padding: initial;
   }
 }
 </style>
