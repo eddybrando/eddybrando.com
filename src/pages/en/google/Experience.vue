@@ -6,12 +6,13 @@
     </div>
 
     <div
-      v-for="{ company, id, location, title } in experiences"
+      v-for="{ company, description, id, location, title } in experiences"
       class="card"
       :key="id"
     >
-      <div>{{ location }}</div>
-      {{ title }} at {{ company }}
+      <div class="location">{{ location }}</div>
+      <div class="title">{{ title }} - {{ company }}</div>
+      <div class="description">{{ description }}</div>
     </div>
   </GoogleLayout>
 </template>
@@ -23,6 +24,7 @@ query {
     edges {
       node {
         company
+        description
         id
         location
         title
@@ -73,10 +75,23 @@ export default {
 
 .card {
   margin-bottom: 27px;
+
+  .location {
+    color: $gray-dark;
+  }
+
+  .title {
+    color: $blue;
+    font-size: 20px;
+    line-height: 1.3;
+    padding-top: 4px;
+    margin-bottom: 3px;
+  }
 }
 
 .count {
   color: $gray-dark;
+  margin-bottom: 10px;
   padding: 11px 0;
 }
 </style>
