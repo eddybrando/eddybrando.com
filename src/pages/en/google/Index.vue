@@ -2,27 +2,21 @@
   <GoogleLayout>
     <Count :count="1" />
 
-    <div class="main-container">
-      <section class="profile-picture-container">
-        <g-image class="profile-picture" src="~/assets/img/eddybrando.jpg" />
-      </section>
-
-      <section class="description">
-        <p>
-          I’m a Peruvian developer, designer and entrepreneur specialised in web
-          technologies.
-        </p>
-      </section>
-    </div>
+    <Card
+      description="View the full source code of these Google Search UI inspired Gridsome pages built with Vue.js components and powered by GraphQL."
+      location="github.com/eddybrando/eddybrando.com/ › ... › google"
+      title="Check the source code on GitHub"
+    />
   </GoogleLayout>
 </template>
 
 <script>
+import Card from "~/components/google/Card";
 import Count from "~/components/google/Count";
 import GoogleLayout from "~/layouts/Google";
 
 export default {
-  components: { Count, GoogleLayout },
+  components: { Card, Count, GoogleLayout },
 
   metaInfo: {
     title: "Eddybrando Vásquez - Google Search",
@@ -30,11 +24,10 @@ export default {
     meta: [
       {
         name: "description",
-        content: "",
+        content:
+          "Eddybrando Vásquez's website in a user interface designed like Google Search.",
       },
     ],
   },
 };
 </script>
-
-<style lang="scss" scoped></style>

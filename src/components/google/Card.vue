@@ -1,12 +1,10 @@
 <template>
   <div class="card">
-    <div class="location">{{ locationCountry }} › {{ locationCity }}</div>
-    <div class="title">{{ title }} - {{ company }}</div>
+    <div class="location" v-text="location" />
+    <div class="title" v-text="title" />
     <div class="description">
-      <span class="time"
-        >{{ startDateFormatted }} -
-        <span v-if="endDateFormatted">{{ endDateFormatted }}</span
-        ><span v-else>Present</span> -</span
+      <span v-if="showDate" class="date"
+        >{{ startDateFormatted }} - {{ endDateFormatted }} -</span
       >
       {{ description }}
     </div>
@@ -20,10 +18,6 @@ const dateFormat = "MMM YYYY";
 
 export default {
   props: {
-    company: {
-      required: true,
-      type: String,
-    },
     description: {
       required: true,
       type: String,
@@ -33,16 +27,18 @@ export default {
       required: false,
       type: String,
     },
-    locationCity: {
+    location: {
       required: true,
       type: String,
     },
-    locationCountry: {
-      required: true,
-      type: String,
+    showDate: {
+      default: false,
+      required: false,
+      type: Boolean,
     },
     startDate: {
-      required: true,
+      default: "",
+      required: false,
       type: String,
     },
     title: {
@@ -53,7 +49,7 @@ export default {
 
   computed: {
     endDateFormatted() {
-      return this.endDate ? moment(this.endDate).format(dateFormat) : null;
+      return this.endDate ? moment(this.endDate).format(dateFormat) : "Present";
     },
 
     startDateFormatted() {
@@ -70,7 +66,7 @@ export default {
   margin-bottom: 27px;
 }
 
-.time {
+.date {
   color: $gray-dark;
 }
 

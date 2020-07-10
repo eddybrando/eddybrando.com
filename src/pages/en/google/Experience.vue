@@ -14,14 +14,13 @@
         title,
       } in experiences"
       class="card"
-      :company="company"
       :description="description"
       :endDate="endDate"
       :key="id"
-      :locationCity="locationCity"
-      :locationCountry="locationCountry"
+      :location="`${locationCity} › ${locationCountry}`"
+      showDate
       :startDate="startDate"
-      :title="title"
+      :title="`${title} - ${company}`"
     />
   </GoogleLayout>
 </template>
