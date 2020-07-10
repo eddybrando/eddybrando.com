@@ -75,7 +75,10 @@ export default {
 @import "~/assets/css/google/variables";
 
 .card {
-  margin-bottom: 27px;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  margin-bottom: 10px;
+  padding: 16px;
 }
 
 .date {
@@ -99,5 +102,14 @@ export default {
   font-size: 20px;
   line-height: 1.3;
   margin: 4px 0;
+}
+
+@media only screen and (min-width: $viewport-lg-min) {
+  .card {
+    border-radius: initial;
+    box-shadow: initial;
+    margin-bottom: 27px;
+    padding: initial;
+  }
 }
 </style>

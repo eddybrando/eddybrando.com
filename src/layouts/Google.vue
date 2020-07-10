@@ -18,7 +18,14 @@ export default {
 @import "~/assets/css/google/variables";
 
 .main {
-  margin-left: $main-margin-left-lg;
-  width: 652px;
+  padding: 8px;
+}
+
+@media only screen and (min-width: $viewport-lg-min) {
+  .main {
+    margin-left: $main-margin-left-lg;
+    padding: initial;
+    width: $main-width-lg;
+  }
 }
 </style>

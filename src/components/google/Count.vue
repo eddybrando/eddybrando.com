@@ -31,6 +31,12 @@ export default {
 .count {
   color: $gray-dark;
   margin-bottom: 10px;
-  padding: 11px 0;
+  padding: 11px 16px;
+}
+
+@media only screen and (min-width: $viewport-lg-min) {
+  .count {
+    padding: 11px 0;
+  }
 }
 </style>
