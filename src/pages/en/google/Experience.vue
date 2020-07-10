@@ -1,7 +1,7 @@
 <template>
   <GoogleLayout>
     <main class="main">
-      <div>
+      <div class="count">
         About {{ experiencesCount }} results ({{ $options.requestTime }}
         seconds)
       </div>
@@ -61,5 +61,10 @@ export default {
 
 .main {
   margin-left: $main-margin-left-lg;
+}
+
+.count {
+  color: $gray-dark;
+  padding: 11px 0;
 }
 </style>
