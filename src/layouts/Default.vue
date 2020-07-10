@@ -34,8 +34,18 @@
 <script>
 import Header from "~/components/Header";
 
+const layoutClass = "default";
+
 export default {
   components: { Header },
+
+  mounted() {
+    document.body.classList.add(layoutClass);
+  },
+
+  beforeDestroy() {
+    document.body.classList.remove(layoutClass);
+  },
 
   props: {
     headerTitleAppend: {

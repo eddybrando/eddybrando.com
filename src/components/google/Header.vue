@@ -1,13 +1,9 @@
 <template>
   <header>
     <div class="top-section">
-      <a
-        class="logo-link"
-        title="Back to the start"
-        href="https://eddybrando.com"
-      >
+      <g-link class="logo-link" title="Back to the start" to="/">
         <g-image class="logo-img" src="~/assets/img/google/logo.png" />
-      </a>
+      </g-link>
       <div class="search-box">
         Eddybrando Vásquez
       </div>

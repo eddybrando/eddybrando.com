@@ -9,8 +9,18 @@
 import Header from "~/components/google/Header";
 import "~/assets/css/google/base.scss";
 
+const layoutClass = "google";
+
 export default {
   components: { Header },
+
+  mounted() {
+    document.body.classList.add(layoutClass);
+  },
+
+  beforeDestroy() {
+    document.body.classList.remove(layoutClass);
+  },
 };
 </script>
 
