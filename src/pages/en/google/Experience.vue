@@ -5,7 +5,14 @@
       seconds)
     </div>
 
-    <div>{{ $page.experiences }}</div>
+    <div
+      v-for="{ company, id, location, title } in experiences"
+      class="card"
+      :key="id"
+    >
+      <div>{{ location }}</div>
+      {{ title }} at {{ company }}
+    </div>
   </GoogleLayout>
 </template>
 
@@ -15,7 +22,10 @@ query {
     totalCount
     edges {
       node {
+        company
         id
+        location
+        title
       }
     }
   }
@@ -35,6 +45,10 @@ export default {
   },
 
   computed: {
+    experiences() {
+      return this.$page.experiences.edges.map(({ node }) => node);
+    },
+
     experiencesCount() {
       return this.$page.experiences.totalCount;
     },
@@ -56,6 +70,10 @@ export default {
 
 <style lang="scss" scoped>
 @import "~/assets/css/google/variables";
+
+.card {
+  margin-bottom: 27px;
+}
 
 .count {
   color: $gray-dark;

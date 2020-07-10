@@ -1,6 +1,12 @@
 [
   {
     "company": "IBM",
-    "role": "Senior Web Developer"
+    "location": "Munich, Germany",
+    "title": "Senior Web Developer"
+  },
+  {
+    "company": "Kickz (Zalando)",
+    "location": "Munich, Germany",
+    "title": "Lead Web Developer"
   }
 ]
