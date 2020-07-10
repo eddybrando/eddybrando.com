@@ -2,6 +2,35 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/eddybrando/eddybrando.com/compare/v2.0.0...v2.1.0) (2020-07-10)
+
+
+### Features
+
+* **google:** add link title ([b0f8ea3](https://github.com/eddybrando/eddybrando.com/commit/b0f8ea34407fba9bf1a2fb0d87fe12c9374d058e))
+* **google:** add more experience data ([f4dc444](https://github.com/eddybrando/eddybrando.com/commit/f4dc4443ecf3c3c05107c40a53597a1e5717c1d5))
+* **google:** adjust count label ([ade3ce7](https://github.com/eddybrando/eddybrando.com/commit/ade3ce725184dba418053d018dd12a6cc73bff35))
+* **google:** create active nav item style ([a3837aa](https://github.com/eddybrando/eddybrando.com/commit/a3837aae04e6c6f59a23f0bd0c86f76ebcf5b012))
+* **google:** create base layout ([6730419](https://github.com/eddybrando/eddybrando.com/commit/6730419e72662271cf22c91beb60ea3d26727684))
+* **google:** create Card component ([224371d](https://github.com/eddybrando/eddybrando.com/commit/224371d9386263e60037ae03a541883267a6a996))
+* **google:** create card in Index ([2f3dc98](https://github.com/eddybrando/eddybrando.com/commit/2f3dc9846587424cb8ef906a4d16c4f286e2f4ab))
+* **google:** create cards mobile design ([7dc507d](https://github.com/eddybrando/eddybrando.com/commit/7dc507d6b3e1e9007bd919a093699309bdb0e85a))
+* **google:** create Count component ([e79a9bc](https://github.com/eddybrando/eddybrando.com/commit/e79a9bc4cb4eb5e05f0dcd874083dbd8f8bb733b))
+* **google:** create fake request time in component ([043ccd3](https://github.com/eddybrando/eddybrando.com/commit/043ccd38965b3b7e0c3a84ec17ea796b6a9d5b54))
+* **google:** create header mobile design ([a74f69f](https://github.com/eddybrando/eddybrando.com/commit/a74f69f4478d6170bdd89cb5b530cddae9ad80ab))
+* **google:** create mobile design for Nav ([07478b2](https://github.com/eddybrando/eddybrando.com/commit/07478b2fe6594a0565409883c355881ddb6d7bc3))
+* **google:** create top section ([6e5063d](https://github.com/eddybrando/eddybrando.com/commit/6e5063da0751dfd62eca910bfd05dc0e5817e42c))
+* **google:** display country and city in hierarchy ([dcda7bd](https://github.com/eddybrando/eddybrando.com/commit/dcda7bd17059f7628c7bc3368c6f0ee1f709d7da))
+* **google:** display experience dates ([781a1b1](https://github.com/eddybrando/eddybrando.com/commit/781a1b1ee61939afa949ea4f0b5dd90b3e6a6753))
+* **google:** link to absolute path ([0316136](https://github.com/eddybrando/eddybrando.com/commit/0316136d11455394d1fb4b245fba92b4071d7609))
+* **google:** link to source code ([4defb5e](https://github.com/eddybrando/eddybrando.com/commit/4defb5ebd0d00a5f0e2981ef062e28a440af3715))
+* **google:** move main style to layout ([dd708ac](https://github.com/eddybrando/eddybrando.com/commit/dd708ac2c8b561fb1c6424b1c66d3c572afcdd82))
+* **google:** query experience data ([c7e8439](https://github.com/eddybrando/eddybrando.com/commit/c7e8439a978c5291b5dbe3d513c75a36a2274c5e))
+* **google:** style count ([1774ec9](https://github.com/eddybrando/eddybrando.com/commit/1774ec9d231bac21a262c9212bf653100a52b15c))
+* **google:** style result cards ([ab6e986](https://github.com/eddybrando/eddybrando.com/commit/ab6e986746524dbea4e647bfe11d8bb1a249fbb9))
+* **index:** link to "Google mode" ([00d75f6](https://github.com/eddybrando/eddybrando.com/commit/00d75f6b1b8ca06d25bbfcb5e2f623059d5d3d27))
+* add more experience data ([fb5ddf9](https://github.com/eddybrando/eddybrando.com/commit/fb5ddf9c88ac6cf7105180f8c36eb9c06f489dc1))
+
 ## [2.0.0](https://github.com/eddybrando/eddybrando.com/compare/v1.15.2...v2.0.0) (2020-07-10)
 
 
