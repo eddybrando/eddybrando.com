@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <slot />
+    <main class="main"><slot /></main>
   </div>
 </template>
 
@@ -13,3 +13,12 @@ export default {
   components: { Header },
 };
 </script>
+
+<style lang="scss" scoped>
+@import "~/assets/css/google/variables";
+
+.main {
+  margin-left: $main-margin-left-lg;
+  width: 652px;
+}
+</style>

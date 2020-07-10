@@ -1,13 +1,11 @@
 <template>
   <GoogleLayout>
-    <main class="main">
-      <div class="count">
-        About {{ experiencesCount }} results ({{ $options.requestTime }}
-        seconds)
-      </div>
+    <div class="count">
+      About {{ experiencesCount }} results ({{ $options.requestTime }}
+      seconds)
+    </div>
 
-      <div>{{ $page.experiences }}</div>
-    </main>
+    <div>{{ $page.experiences }}</div>
   </GoogleLayout>
 </template>
 
@@ -58,10 +56,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "~/assets/css/google/variables";
-
-.main {
-  margin-left: $main-margin-left-lg;
-}
 
 .count {
   color: $gray-dark;
