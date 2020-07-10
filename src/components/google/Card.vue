@@ -76,7 +76,7 @@ export default {
 
 .card {
   border-radius: 8px;
-  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  box-shadow: $box-shadow;
   margin-bottom: 10px;
   padding: 16px;
 }
