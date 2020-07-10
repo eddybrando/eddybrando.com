@@ -6,7 +6,7 @@
       description="View the full source code of these Google Search UI inspired Gridsome pages built with Vue.js components and powered by GraphQL."
       location="github.com/eddybrando/eddybrando.com/ › ... › google"
       title="Check the source code on GitHub"
-      to="https://github.com/eddybrando/eddybrando.com/tree/master/src/pages/google"
+      to="https://github.com/eddybrando/eddybrando.com/tree/master/src/pages/en/google"
     />
   </GoogleLayout>
 </template>
