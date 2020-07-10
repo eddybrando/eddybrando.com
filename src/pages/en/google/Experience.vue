@@ -2,7 +2,7 @@
   <GoogleLayout>
     <Count :count="experiencesCount" />
 
-    <div
+    <Card
       v-for="{
         company,
         description,
@@ -14,18 +14,15 @@
         title,
       } in experiences"
       class="card"
+      :company="company"
+      :description="description"
+      :endDate="endDate"
       :key="id"
-    >
-      <div class="location">{{ locationCountry }} › {{ locationCity }}</div>
-      <div class="title">{{ title }} - {{ company }}</div>
-      <div class="description">
-        <span class="time"
-          >{{ startDate }} - <span v-if="endDate">{{ endDate }}</span
-          ><span v-else>Present</span> -</span
-        >
-        {{ description }}
-      </div>
-    </div>
+      :locationCity="locationCity"
+      :locationCountry="locationCountry"
+      :startDate="startDate"
+      :title="title"
+    />
   </GoogleLayout>
 </template>
 
@@ -50,22 +47,16 @@ query {
 </page-query>
 
 <script>
-import moment from "moment";
+import Card from "~/components/google/Card";
 import Count from "~/components/google/Count";
 import GoogleLayout from "~/layouts/Google";
 
-const dateFormat = "MMM YYYY";
-
 export default {
-  components: { Count, GoogleLayout },
+  components: { Card, Count, GoogleLayout },
 
   computed: {
     experiences() {
-      return this.$page.experiences.edges.map(({ node }) => ({
-        ...node,
-        endDate: node.endDate ? moment(node.endDate).format(dateFormat) : null,
-        startDate: moment(node.startDate).format(dateFormat),
-      }));
+      return this.$page.experiences.edges.map(({ node }) => node);
     },
 
     experiencesCount() {
@@ -86,22 +77,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-@import "~/assets/css/google/variables";
-
-.card {
-  margin-bottom: 27px;
-
-  .time {
-    color: $gray-dark;
-  }
-
-  .title {
-    color: $blue;
-    font-size: 20px;
-    line-height: 1.3;
-    margin: 4px 0;
-  }
-}
-</style>
